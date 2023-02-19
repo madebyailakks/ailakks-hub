@@ -7,7 +7,10 @@ export default function Header() {
             <a>Ailakks Hub</a>
             <div className={style.routes}>
                 <Link href="/" text="Inicio" />
+                <Link href="/work" text="Creadores de contenido" />
+                <Link href="/work" text="Colaboraciones" />
                 <Link href="/work" text="Proyectos" />
+                <Link href="/work" text="Comisiones" />
             </div>
         </div>
     )

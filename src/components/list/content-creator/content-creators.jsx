@@ -1,4 +1,4 @@
-import style from "./work-list.module.css";
+import style from "./content-creators.module.css";
 
 const creators = [
     {
@@ -75,7 +75,7 @@ const creators = [
     }
 ]
 
-export default function WorkList() {
+export default function ContentCreators() {
     return (
         <div className={style.wrapper}>
             {creators.map((value, key) =>
