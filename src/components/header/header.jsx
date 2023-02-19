@@ -5,7 +5,7 @@ export default function Header() {
         <div className={style.header}>
             <h1>Ailakks Hub</h1>
             <div className={style.routes}>
-                <a href="/">Inicio</a>
+                <a href="/src/pages">Inicio</a>
                 <a href="/work">Proyectos</a>
             </div>
         </div>

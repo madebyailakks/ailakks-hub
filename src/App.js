@@ -1,7 +1,7 @@
-import Header from "./components/ui/header/header";
+import Header from "./components/header/header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import WorkList from "./pages/work/work-list";
 import Home from "./pages/home/home";
+import Work from "./pages/work/work";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/work" element={<WorkList />} />
+                <Route path="/work" element={<Work />} />
             </Routes>
         </BrowserRouter>
     </div>
