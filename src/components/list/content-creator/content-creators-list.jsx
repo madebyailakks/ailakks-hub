@@ -1,4 +1,4 @@
-import style from "./content-creators.module.css";
+import style from "./content-creators-list.module.css";
 
 const creators = [
     {
@@ -75,7 +75,7 @@ const creators = [
     }
 ]
 
-export default function ContentCreators() {
+export default function ContentCreatorsList() {
     return (
         <div className={style.wrapper}>
             {creators.map((value, key) =>

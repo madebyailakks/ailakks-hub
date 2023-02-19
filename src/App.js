@@ -1,8 +1,8 @@
 import Header from "./components/header/header";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from "./pages/home/home";
-import Work from "./pages/work/work";
-import Projects from "./components/list/work/projects";
+import Work from "./pages/work/works";
+import ContentCreators from "./pages/content-creators/content-creators";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/content-creators" element={<Work />} />
-                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/content-creators" element={<ContentCreators />} />
+                    <Route path="/projects" element={<Work />} />
                     <Route path="/work" element={<Work />} />
                 </Routes>
             </BrowserRouter>

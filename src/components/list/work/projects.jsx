@@ -1,6 +1,6 @@
-import style from "./projects.module.css";
+import style from "./projects-list.module.css";
 
-const works = [
+const projects = [
     {
         "displayName": "Regorland",
         "image": "regorland.png"
@@ -35,10 +35,10 @@ const works = [
     },
 ]
 
-export default function Projects() {
+export default function ProjectsList() {
     return (
         <div className={style.wrapper}>
-            {works.map((value, key) =>
+            {projects.map((value, key) =>
                 <div className={style.element} key={key}>
                     <div className={style.grid_wrap}>
                         <div className={style.element}>
