@@ -33,6 +33,14 @@ const projectsList = [
         "displayName": "Hybox Studios",
         "image": "hybox.png"
     },
+    {
+        "displayName": "Kiroscraft",
+        "image": "kiroscraft.png"
+    },
+    {
+        "displayName": "Canary Games",
+        "image": "canary-games.png"
+    },
 ]
 
 export default function ProjectsList() {
