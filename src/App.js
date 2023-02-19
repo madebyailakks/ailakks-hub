@@ -4,6 +4,7 @@ import Home from "./pages/home/home";
 import Work from "./pages/work/works";
 import ContentCreators from "./pages/content-creators/content-creators";
 import Projects from "./pages/projects/projects";
+import NotFound from "./pages/not-found/not-found";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/content-creators" element={<ContentCreators />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/work" element={<Work />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </BrowserRouter>
         </div>
