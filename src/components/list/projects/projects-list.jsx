@@ -34,10 +34,6 @@ const projectsList = [
         "image": "hybox.png"
     },
     {
-        "displayName": "Kiroscraft",
-        "image": "kiroscraft.png"
-    },
-    {
         "displayName": "Canary Games",
         "image": "canary-games.png"
     },
