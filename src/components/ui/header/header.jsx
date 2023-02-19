@@ -6,7 +6,7 @@ export default function Header() {
             <h1>Ailakks Hub</h1>
             <div className={style.routes}>
                 <a href="/">Inicio</a>
-                <a href="/">Proyectos</a>
+                <a href="/work">Proyectos</a>
             </div>
         </div>
     )
