@@ -13,7 +13,7 @@ body {
 
   font-family: 'GintoNord', sans-serif;
 
-  --theme-background-main: #0e0e0e;
+  --theme-background-main: #070C16;
 
   background: var(--theme-background-main);
 }
@@ -29,9 +29,7 @@ body {
 
 h1 {
   font-size: 90px;
-  background: -webkit-linear-gradient(#31e5c5, #2e76e0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #D388AF;
 }
 
 h2, h3, h4, p {
