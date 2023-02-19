@@ -9,7 +9,7 @@ export default function Header() {
                 <Link href="/" text="Inicio" />
                 <Link href="/content-creators" text="Creadores de contenido" />
                 <Link href="/projects" text="Proyectos" />
-                <Link href="/work" text="Proyectos" />
+                <Link href="/work" text="Proyectos personales" />
                 <Link href="/comissions" text="Comisiones" />
             </div>
         </div>

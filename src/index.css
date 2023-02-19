@@ -40,3 +40,11 @@ h2, h3, h4, p {
 p {
   font-size: 20px;
 }
+
+.avatar {
+  border-radius: 50%;
+}
+
+i {
+  color: white;
+}
