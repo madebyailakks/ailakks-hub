@@ -1,0 +1,4 @@
+.text_wrap {
+    display: grid;
+    grid-gap: 30px;
+}

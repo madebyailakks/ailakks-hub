@@ -8,7 +8,7 @@ export default function Header() {
             <div className={style.routes}>
                 <Link href="/" text="Inicio" />
                 <Link href="/content-creators" text="Creadores de contenido" />
-                <Link href="/projects" text="Proyectos" />
+                <Link href="/projectsList" text="Proyectos" />
                 <Link href="/work" text="Proyectos" />
                 <Link href="/comissions" text="Comisiones" />
             </div>
