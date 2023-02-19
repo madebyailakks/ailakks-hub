@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:ital,wght@1,900&display=swap');
 
+@font-face {
+  font-family: 'GintoNord';
+  src: local('GintoNord'), url('media/fonts/ginto_nord.ttf') format('ttf');
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'Questrial', sans-serif;
+  font-family: 'GintoNord', sans-serif;
 
   --theme-background-main: #0e0e0e;
 
   background: var(--theme-background-main);
+}
+
+* {
+  margin: 0;
 }
 
 .app {
@@ -19,12 +28,16 @@ body {
 }
 
 h1 {
-  font-size: 72px;
-  background: -webkit-linear-gradient(#c6f349, #7ae03f);
+  font-size: 90px;
+  background: -webkit-linear-gradient(#31e5c5, #2e76e0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 h2, h3, h4, p {
   color: white;
+}
+
+p {
+  font-size: 20px;
 }
