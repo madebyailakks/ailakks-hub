@@ -13,23 +13,24 @@ body {
 
   font-family: 'GintoNord', sans-serif;
 
-  --theme-background-main: #070C16;
+  --theme-background-main: #171717;
 
   background: var(--theme-background-main);
 }
 
 * {
   margin: 0;
+  height: min-content;
 }
 
 .app {
   margin: 0 auto;
-  max-width: 1800px;
+  max-width: 1500px;
 }
 
 h1 {
-  font-size: 90px;
-  color: #D388AF;
+  font-size: 80px;
+  color: #615E93;
 }
 
 h2, h3, h4, p {
