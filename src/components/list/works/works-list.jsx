@@ -42,7 +42,7 @@ export default function WorksList() {
                 <div className={style.element} key={key}>
                     <div className={style.grid_wrap}>
                         <div className={style.element}>
-                            <img className={style.avatar} src={require('../../../media/works/' + value.image)} />
+                            <img className={style.avatar} src={require('../../../media/images/works/' + value.image)} />
                             <h3 href={value.source}>{value.displayName}</h3>
                             <p>{value.count}</p>
                         </div>
