@@ -6,6 +6,22 @@
   src: local('GintoNord'), url('media/fonts/ginto_nord.ttf') format('ttf');
 }
 
+:root {
+  --balloon1-bg-color: rgba(38, 38, 38, 0.9);
+  --balloon2-bg-color: rgba(35, 35, 35, 0.9);
+  --balloon3-bg-color: rgba(40, 40, 40, 0.89);
+  --balloon4-bg-color: rgba(47, 47, 47, 0.84);
+  --balloon5-bg-color: rgba(37, 37, 37, 0.9);
+  --bg-color: #c0d6df;
+
+  --balloon-anim-1: balloon1 15s ease infinite;
+  --balloon-anim-2: balloon2 5s ease infinite;
+  --balloon-anim-3: balloon3 10s ease infinite;
+  --balloon-anim-4: balloon4 5s ease infinite;
+  --balloon-anim-5: balloon5 15s ease infinite;
+  --balloon-anim-6: balloon7 5s ease infinite;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
