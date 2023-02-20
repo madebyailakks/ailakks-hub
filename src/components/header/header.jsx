@@ -13,6 +13,7 @@ export default function Header() {
                     <Link href="/work" text="Proyectos personales" />
                     <Link href="/music" text="Música" />
                     <Link href="/comissions" text="Comisiones" />
+                    <Link href="/blog" text="Blog" />
                 </div>
             </div>
         </div>

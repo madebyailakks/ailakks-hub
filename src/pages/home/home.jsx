@@ -32,6 +32,11 @@ const social = [
         link: "https://discord.com/invite/rvTPye9ShK",
         icon: "fa-brands fa-discord"
     },
+    {
+        name: "Twitch",
+        link: "https://www.twitch.tv/ailakksK",
+        icon: "fa-brands fa-twitch"
+    },
     /*{
         name: "SpigotMC",
         link: "https://www.spigotmc.org/members/ailakks.1433377/",

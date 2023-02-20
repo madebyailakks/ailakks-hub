@@ -36,6 +36,12 @@ const worksList = [
         "image": "lookup.png",
         "description": "",
         "github": ""
+    },
+    {
+        "name": "Writty",
+        "image": "writty.png",
+        "description": "",
+        "github": ""
     }
 ]
 
