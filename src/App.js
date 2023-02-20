@@ -5,6 +5,7 @@ import Work from "./pages/work/works";
 import ContentCreators from "./pages/content-creators/content-creators";
 import Projects from "./pages/projects/projects";
 import NotFound from "./pages/not-found/not-found";
+import Footer from "./components/footer/footer";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                     </Routes>
                 </BrowserRouter>
             </div>
+            <Footer />
         </div>
     );
 }
