@@ -22,14 +22,15 @@ export default function Playlist() {
                     playlist.tracks.items.map((value, key) =>
                         <div className={style.element} key={key}>
                             <img src={value.track.album.images[0].url} />
-                            {value.track.name}
+                            <a href={value.track.external_urls.spotify}>{value.track.name}</a>
                             {
                                 value.track.artists.map((value, key) =>
                                     <div className={style.element} key={key}>
-                                        {value.name}
+                                        <a href={value.external_urls.spotify}>{value.name}</a>
                                     </div>
                                 )
                             }
+                            <audio src={value.track.preview_url} controls={true} autoPlay={false} />
                         </div>
                     )
                 }
