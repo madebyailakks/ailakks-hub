@@ -11,6 +11,12 @@
 .routes {
     display: grid;
     grid-auto-flow: column;
+    grid-gap: 35px;
+}
+
+.routes > .wrapper {
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
     grid-gap: 10px;
 }

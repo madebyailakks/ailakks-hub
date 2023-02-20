@@ -6,12 +6,14 @@ export default function Header() {
         <div className={style.header}>
             <a>Ailakks Hub</a>
             <div className={style.routes}>
-                <Link href="/" text="Inicio" />
-                <Link href="/content-creators" text="Creadores de contenido" />
-                <Link href="/projects" text="Proyectos" />
-                <Link href="/work" text="Proyectos personales" />
-                <Link href="/music" text="Música" />
-                <Link href="/comissions" text="Comisiones" />
+                <div className={style.wrapper}>
+                    <Link href="/" text="Inicio" />
+                    <Link href="/content-creators" text="Creadores de contenido" />
+                    <Link href="/projects" text="Proyectos" />
+                    <Link href="/work" text="Proyectos personales" />
+                    <Link href="/music" text="Música" />
+                    <Link href="/comissions" text="Comisiones" />
+                </div>
             </div>
         </div>
     )
