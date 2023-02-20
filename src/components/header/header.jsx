@@ -1,5 +1,6 @@
 import style from "./header.module.css";
 import Link from "../button/link/link";
+import RouteLink from "../button/link/link";
 
 export default function Header() {
     return (
@@ -7,13 +8,13 @@ export default function Header() {
             <a>Ailakks Hub</a>
             <div className={style.routes}>
                 <div className={style.wrapper}>
-                    <Link href="/" text="Inicio" />
-                    <Link href="/content-creators" text="Creadores de contenido" />
-                    <Link href="/projects" text="Proyectos" />
-                    <Link href="/work" text="Proyectos personales" />
-                    <Link href="/music" text="Música" />
-                    <Link href="/comissions" text="Comisiones" />
-                    <Link href="/blog" text="Blog" />
+                    <RouteLink to="/" text="Inicio" />
+                    <RouteLink to="/content-creators" text="Creadores de contenido" />
+                    <RouteLink to="/projects" text="Proyectos" />
+                    <RouteLink to="/work" text="Proyectos personales" />
+                    <RouteLink to="/music" text="Música" />
+                    <RouteLink to="/comissions" text="Comisiones" />
+                    <RouteLink to="/blog" text="Blog" />
                 </div>
             </div>
         </div>

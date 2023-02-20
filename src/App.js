@@ -1,5 +1,5 @@
 import Header from "./components/header/header";
-import {Route, Routes, useLocation} from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/home/home";
 import Work from "./pages/work/works";
 import ContentCreators from "./pages/content-creators/content-creators";
@@ -16,22 +16,30 @@ function App() {
 
     return (
         <div className="app">
-            <Header/>
+            <Header />
             <div className="body">
-                <TransitionGroup component={null}>
-                    <CSSTransition key={location.key} classNames={style.fade} timeout={300}>
+                <TransitionGroup>
+                    <CSSTransition
+                        key={location.key}
+                        timeout={{ enter: 300, exit: 300 }}
+                        classNames={{
+                            enter: style["fade-enter"],
+                            enterActive: style["fade-enter-active"],
+                            exit: style["fade-exit"],
+                            exitActive: style["fade-exit-active"],
+                        }}>
                         <Routes location={location}>
-                            <Route path="/" element={<Home/>}/>
-                            <Route path="/content-creators" element={<ContentCreators/>}/>
-                            <Route path="/projects" element={<Projects/>}/>
-                            <Route path="/work" element={<Work/>}/>
-                            <Route path="/music" element={<Playlist/>}/>
-                            <Route path="*" element={<NotFound/>}/>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/content-creators" element={<ContentCreators />} />
+                            <Route path="/projects" element={<Projects />} />
+                            <Route path="/work" element={<Work />} />
+                            <Route path="/music" element={<Playlist />} />
+                            <Route path="*" element={<NotFound />} />
                         </Routes>
                     </CSSTransition>
                 </TransitionGroup>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }

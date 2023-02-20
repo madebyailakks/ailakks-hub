@@ -1,7 +1,8 @@
 import style from "./link.module.css";
+import { Link } from 'react-router-dom'
 
-export default function Link(props) {
+export default function RouteLink(props) {
     return (
-        <a className={style.link} href={props.href}>{props.text}</a>
+        <Link className={style.link} to={props.to}>{props.text}</Link>
     )
 }
