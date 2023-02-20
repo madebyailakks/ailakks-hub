@@ -59,7 +59,6 @@ const social = [
 export default function Home() {
     return (
         <div className={style.body}>
-            <Ballons />
             <div className={style.wrapper}>
                 <img className="avatar" src={avatar} />
                 <div className={style.content}>

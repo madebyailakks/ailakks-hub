@@ -1,8 +1,8 @@
 import style from "./link.module.css";
-import { Link } from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 export default function RouteLink(props) {
     return (
-        <Link className={style.link} to={props.to}>{props.text}</Link>
+        <NavLink className={({isActive}) => isActive ? style.active: style.link} to={props.to} end>{props.text}</NavLink>
     )
 }

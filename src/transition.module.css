@@ -1,22 +1,21 @@
 .fade-enter {
     opacity: 0;
-    transform: translateY(25px);
+    transform: translate(0, 25px);
     z-index: 1;
 }
-
-.fade-enter-active {
+.fade-enter.fade-enter-active {
     opacity: 1;
-    transform: translateY(0);
-    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-}
+    transform: translate(0, 0);
 
+    transition: opacity 250ms ease-out, transform 300ms ease;
+}
 .fade-exit {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0, 0);
 }
-
-.fade-exit-active {
+.fade-exit.fade-exit-active {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    transform: translate(0, 30px);
+
+    transition: opacity 250ms ease-out, transform 300ms ease;
 }

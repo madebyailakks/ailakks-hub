@@ -1,7 +1,12 @@
-.link {
+.link, .active {
     padding: 10px 20px;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.05);
     text-decoration: none;
     color: white;
+}
+
+.active {
+    background: white;
+    color: black;
 }
