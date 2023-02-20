@@ -1,4 +1,5 @@
 import style from "./home.module.css";
+import {Link} from "react-router-dom";
 
 const avatar = require("../../media/images/main/avatar.png");
 
@@ -64,6 +65,18 @@ export default function Home() {
                                 <i className={value.icon} />
                                 <p>{value.text}: {value.value}</p>
                             </div>
+                        </div>
+                    )}
+                </div>
+                <div className={style.elements_wrapper}>
+                    {social.map((value, key) =>
+                        <div className={style.element} key={key}>
+                            <Link style={{textDecoration: 'none'}} to={value.link}>
+                                <div className={style.element}>
+                                    <i className={value.icon} />
+                                    <p>{value.name}</p>
+                                </div>
+                            </Link>
                         </div>
                     )}
                 </div>
