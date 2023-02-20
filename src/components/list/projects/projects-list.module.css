@@ -12,3 +12,9 @@
     border-radius: 50%;
     height: 100px;
 }
+
+.rich_element {
+    background: #171717;
+    padding: 40px;
+    border-radius: 10px;
+}

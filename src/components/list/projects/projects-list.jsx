@@ -43,23 +43,47 @@ const projectsList = [
     },
     {
         "displayName": "Planeta Diamante 23",
-        "image": "planeta-diamante.png"
+        "image": "planeta-diamante.png",
+        "rich": true,
+        "description": "Evento realizado por Regortread en colaboración con Samsung España. " +
+            "En este servidor público, los jugadores junto con algunos creadores de contenido " +
+            "del Team Galaxy, como Folagor, tenían la misión de recoger Shiterita, la basura del planeta, " +
+            "en referencia a la sostenibilidad del nuevo Galaxy S23. Según iba consiguiendo " +
+            "Shiterita, podían encontrar objetos y conseguir diferentes premios. En total, " +
+            "se regalaron 200 códigos de descuento de 150€, x4 móviles S23, y x1 S23 Ultra.",
     }
 ]
 
 export default function ProjectsList() {
     return (
-        <div className={style.wrapper}>
-            {projectsList.map((value, key) =>
-                <div className={style.element} key={key}>
-                    <div className={style.grid_wrap}>
-                        <div className={style.element}>
-                            <img className={style.avatar} src={require('../../../media/images/project/' + value.image)} />
-                            <h3 href={value.source}>{value.displayName}</h3>
-                            <p>{value.count}</p>
+        <div>
+            <div className={style.wrapper}>
+                {projectsList.map((value, key) =>
+                    <div className={style.element} key={key}>
+                        <div className={style.grid_wrap}>
+                            <div className={style.element}>
+                                <img className={style.avatar}
+                                     src={require('../../../media/images/project/' + value.image)}/>
+                                <h3 href={value.source}>{value.displayName}</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
+            </div>
+            {projectsList.map((value, key) => {
+                    if (value.rich) {
+                        return (
+                            <div className={style.rich_element} key={key}>
+                                <div className={style.grid_wrap}>
+                                    <img className={style.avatar}
+                                         src={require('../../../media/images/project/' + value.image)}/>
+                                    <h3 href={value.source}>{value.displayName}</h3>
+                                    <p>{value.description}</p>
+                                </div>
+                            </div>
+                        )
+                    }
+                }
             )}
         </div>
     )
