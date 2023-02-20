@@ -6,6 +6,11 @@
   src: local('GintoNord'), url('media/fonts/ginto_nord.ttf') format('ttf');
 }
 
+@font-face {
+  font-family: 'SF-Pro-Display-Bold';
+  src: local('SF-Pro-Display-Bold'), url('media/fonts/SF-Pro-Display-Bold.otf') format('otf');
+}
+
 :root {
   --balloon1-bg-color: rgba(38, 38, 38, 0.9);
   --balloon2-bg-color: rgba(35, 35, 35, 0.9);
@@ -24,13 +29,17 @@
 
 body {
   margin: 0;
+  overflow-y: hidden;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: 'GintoNord', sans-serif;
+  font-family: 'SF-Pro-Display-Bold', sans-serif;
 
+  --theme-gradient: linear-gradient(45deg, #ff7be7, #b065f3);
   --theme-background-main: black;
-  --theme-color-main: #615E93;
+  --theme-color-main: #151515;
+  --theme-color-dark: #fc0000;
 
   --max-width: 1500px;
 
@@ -51,10 +60,19 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-.body {
+.container {
+  margin: 0 auto;
+  max-width: var(--max-width);
+  padding: 20px 0;
 }
 
 h1 {
+  background-image: var(--theme-gradient);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+
   font-size: 80px;
 }
 

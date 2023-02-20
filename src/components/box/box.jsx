@@ -5,9 +5,11 @@ export default function Box(props) {
     return (
         <div>
             <Header text={props.title} />
-            <div className={style.wrapper}>
-                {props.left}
-                {props.right}
+            <div className="container">
+                <div className={style.wrapper}>
+                    {props.left}
+                    {props.right}
+                </div>
             </div>
         </div>
     )

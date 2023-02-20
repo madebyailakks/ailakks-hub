@@ -1,11 +1,11 @@
 .header {
-    background: linear-gradient(45deg, #ff7be7, #b065f3);
+    background: var(--theme-gradient);
     padding: 60px;
 }
 
-.header > h1 {
+.header > div > h1 {
     font-size: 100px;
+    color: black;
 
-    margin: 0 auto;
-    max-width: var(--max-width);
+    -webkit-text-fill-color: black;
 }
