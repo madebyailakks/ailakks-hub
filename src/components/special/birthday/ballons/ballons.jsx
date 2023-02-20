@@ -19,6 +19,8 @@ export default function Ballons() {
                 <div className={`${style.balloon} ${style.balloon3} ${style["balloon-anim6"]}`} />
                 <div className={`${style.balloon} ${style.balloon2} ${style["balloon-anim7"]}`} />
                 <div className={`${style.balloon} ${style.balloon4} ${style["balloon-anim8"]}`} />
+                <div className={`${style.balloon} ${style.balloon2} ${style["balloon-anim9"]}`} />
+                <div className={`${style.balloon} ${style.balloon3} ${style["balloon-anim10"]}`} />
             </div>
         </div>
     )

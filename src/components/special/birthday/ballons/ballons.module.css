@@ -42,43 +42,49 @@
 }
 
 .happy .balloon:nth-child(1)::before {
-    content: "H";
+    content: "F";
 }
 .happy .balloon:nth-child(2)::before {
-    content: "A";
+    content: "E";
 }
 .happy .balloon:nth-child(3)::before {
-    content: "P";
+    content: "L";
 }
 .happy .balloon:nth-child(4)::before {
-    content: "P";
-}
-.happy .balloon:nth-child(5)::before {
-    content: "Y";
-}
-.birthday .balloon:nth-child(1)::before {
-    content: "B";
-}
-.birthday .balloon:nth-child(2)::before {
     content: "I";
 }
+.happy .balloon:nth-child(5)::before {
+    content: "Z";
+}
+.birthday .balloon:nth-child(1)::before {
+    content: "C";
+}
+.birthday .balloon:nth-child(2)::before {
+    content: "U";
+}
 .birthday .balloon:nth-child(3)::before {
-    content: "R";
+    content: "M";
 }
 .birthday .balloon:nth-child(4)::before {
-    content: "T";
+    content: "P";
 }
 .birthday .balloon:nth-child(5)::before {
-    content: "H";
+    content: "L";
 }
 .birthday .balloon:nth-child(6)::before {
-    content: "D";
+    content: "E";
 }
 .birthday .balloon:nth-child(7)::before {
     content: "A";
 }
 .birthday .balloon:nth-child(8)::before {
-    content: "Y";
+    content: "Ñ";
+}
+.birthday .balloon:nth-child(9)::before {
+    content: "O";
+}
+.birthday .balloon:nth-child(10)::before {
+    content: "S";
 }
 @keyframes balloon1 {
     0%,
