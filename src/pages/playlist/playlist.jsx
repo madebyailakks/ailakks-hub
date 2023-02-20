@@ -21,6 +21,7 @@ export default function Playlist() {
                 {
                     playlist.tracks.items.map((value, key) =>
                         <div className={style.element} key={key}>
+                            <img src={value.track.album.images[0].url} />
                             {value.track.name}
                             {
                                 value.track.artists.map((value, key) =>
