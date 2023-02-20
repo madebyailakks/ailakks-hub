@@ -6,6 +6,7 @@ import ContentCreators from "./pages/content-creators/content-creators";
 import Projects from "./pages/projects/projects";
 import NotFound from "./pages/not-found/not-found";
 import Footer from "./components/footer/footer";
+import Playlist from "./pages/playlist/playlist";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                         <Route path="/content-creators" element={<ContentCreators/>}/>
                         <Route path="/projects" element={<Projects/>}/>
                         <Route path="/work" element={<Work/>}/>
+                        <Route path="/music" element={<Playlist />}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </BrowserRouter>

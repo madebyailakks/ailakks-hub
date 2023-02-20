@@ -15,6 +15,8 @@ body {
 
   --theme-background-main: #171717;
 
+  --theme-color-main: #615E93;
+
   background: var(--theme-background-main);
 }
 
@@ -39,7 +41,7 @@ body {
 
 h1 {
   font-size: 80px;
-  color: #615E93;
+  color: var(--theme-color-main);
 }
 
 h2, h3, h4, p {
@@ -48,6 +50,11 @@ h2, h3, h4, p {
 
 p {
   font-size: 20px;
+}
+
+a {
+  color: #37c9ce;
+  text-decoration: none;
 }
 
 .avatar {

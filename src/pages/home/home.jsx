@@ -56,7 +56,7 @@ export default function Home() {
             <img className="avatar" src={avatar} />
             <div className={style.content}>
                 <h1>Hola, soy Ailakks</h1>
-                <p>Tengo 16 años, soy de España, y continúo aprendo a diario diferentes lenguajes de programación y tecnologías. He trabajado para grandes creadores de contenido y estoy continuamente trabajando en proyectos nuevos.</p>
+                <p>Hola, me conocen como Ailakks, tengo 16 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
 
                 <div className={style.elements_wrapper}>
                     {data.map((value, key) =>
@@ -68,6 +68,7 @@ export default function Home() {
                         </div>
                     )}
                 </div>
+                <h2>Enlaces</h2>
                 <div className={style.elements_wrapper}>
                     {social.map((value, key) =>
                         <div className={style.element} key={key}>
