@@ -1,5 +1,6 @@
 import style from "./home.module.css";
 import {Link} from "react-router-dom";
+import Ballons from "../../components/special/birthday/ballons/ballons";
 
 const avatar = require("../../media/images/main/avatar.png");
 
@@ -58,6 +59,7 @@ const social = [
 export default function Home() {
     return (
         <div className={style.wrapper}>
+            <Ballons />
             <img className="avatar" src={avatar} />
             <div className={style.content}>
                 <h1>Hola, soy Ailakks</h1>
