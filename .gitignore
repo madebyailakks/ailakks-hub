@@ -12,7 +12,7 @@
 /build
 
 # local
-/src/scripts/gitInfo.js
+/src/generatedGitInfo.json
 
 # misc
 .DS_Store
