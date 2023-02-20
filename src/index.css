@@ -30,8 +30,9 @@ body {
   font-family: 'GintoNord', sans-serif;
 
   --theme-background-main: black;
-
   --theme-color-main: #615E93;
+
+  --max-width: 1500px;
 
   background: var(--theme-background-main);
 }
@@ -51,16 +52,10 @@ body {
 }
 
 .body {
-  margin: 0 auto;
-  max-width: 1500px;
 }
 
 h1 {
   font-size: 80px;
-
-  background-image: linear-gradient(45deg, #ff7be7, #b065f3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 h2, h3, h4, p {

@@ -1,6 +1,9 @@
 .body {
     display: grid;
     grid-gap: 80px;
+
+    margin: 0 auto;
+    max-width: var(--max-width);
 }
 
 .elements_wrapper {

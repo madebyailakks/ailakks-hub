@@ -1,4 +1,3 @@
-import Header from "./components/header/header";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/home/home";
 import Work from "./pages/work/works";
@@ -10,13 +9,14 @@ import Playlist from "./pages/playlist/playlist";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 
 import style from "./transition.module.css";
+import Navbar from "./components/navbar/navbar";
 
 function App() {
     const location = useLocation();
 
     return (
         <div className="app">
-            <Header />
+            <Navbar />
             <div className="body">
                 <TransitionGroup>
                     <CSSTransition

@@ -1,0 +1,22 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 25px 60px;
+
+    background: rgba(255, 255, 255, 0.01);
+    color: white;
+}
+
+.routes {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 35px;
+}
+
+.routes > .wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-gap: 10px;
+}

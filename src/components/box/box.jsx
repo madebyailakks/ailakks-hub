@@ -1,9 +1,10 @@
 import style from "./box.module.css";
+import Header from "../header/header";
 
 export default function Box(props) {
     return (
         <div>
-            <h1>{props.title}</h1>
+            <Header text={props.title} />
             <div className={style.wrapper}>
                 {props.left}
                 {props.right}
