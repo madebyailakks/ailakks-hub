@@ -24,8 +24,12 @@ body {
 }
 
 .app {
+  height: 100vh;
+
   display: grid;
   grid-gap: 60px;
+
+  grid-template-rows: auto 1fr auto;
 }
 
 .body {
