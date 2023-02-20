@@ -11,6 +11,9 @@
 # production
 /build
 
+# credentials
+.env
+
 # local
 /src/generatedGitInfo.json
 
