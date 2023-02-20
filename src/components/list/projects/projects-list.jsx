@@ -41,6 +41,10 @@ const projectsList = [
         "displayName": "Canary Games",
         "image": "canary-games.png"
     },
+    {
+        "displayName": "Planeta Diamante 23",
+        "image": "planeta-diamante.png"
+    }
 ]
 
 export default function ProjectsList() {

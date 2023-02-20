@@ -16,3 +16,15 @@
     padding: 5px 15px;
     border-radius: 25px;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 70px;
+    align-items: center;
+}
+
+.content {
+    display: grid;
+    grid-gap: 20px;
+}
