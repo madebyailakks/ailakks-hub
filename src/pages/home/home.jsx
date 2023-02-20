@@ -15,6 +15,40 @@ const data = [
     }
 ]
 
+const social = [
+    {
+        name: "GitHub",
+        link: "https://github.com/Ailakks",
+        icon: "fa-brands fa-github"
+    },
+    {
+        name: "Twitter",
+        link: "https://twitter.com/Ailakks",
+        icon: "fa-brands fa-twitter"
+    },
+    {
+        name: "Discord",
+        link: "https://discord.com/invite/rvTPye9ShK",
+        icon: "fa-brands fa-discord"
+    },
+    /*{
+        name: "SpigotMC",
+        link: "https://www.spigotmc.org/members/ailakks.1433377/",
+        icon: "fa-solid fa-faucet"
+    },
+    {
+        name: "Buy me a coffee",
+        link: "https://www.buymeacoffee.com/ailakks",
+        icon: "fa-regular fa-cup-togo"
+    },*/
+    {
+        name: "Email",
+        link: "mailto:hola@ailakks.com",
+        icon: "fa-solid fa-envelope"
+    }
+]
+
+
 export default function Home() {
     return (
         <div className={style.wrapper}>
