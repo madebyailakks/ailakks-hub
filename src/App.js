@@ -7,22 +7,22 @@ import Projects from "./pages/projects/projects";
 import NotFound from "./pages/not-found/not-found";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-        <div className={"app"}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/content-creators" element={<ContentCreators />} />
-                    <Route path="/projects" element={<Projects />} />
-                    <Route path="/work" element={<Work />} />
-                    <Route path="*" element={<NotFound />} />
-                </Routes>
-            </BrowserRouter>
+    return (
+        <div className="app">
+            <Header/>
+            <div className="body">
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/content-creators" element={<ContentCreators/>}/>
+                        <Route path="/projects" element={<Projects/>}/>
+                        <Route path="/work" element={<Work/>}/>
+                        <Route path="*" element={<NotFound/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
 export default App;

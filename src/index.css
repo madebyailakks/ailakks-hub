@@ -24,6 +24,11 @@ body {
 }
 
 .app {
+  display: grid;
+  grid-gap: 60px;
+}
+
+.body {
   margin: 0 auto;
   max-width: 1500px;
 }

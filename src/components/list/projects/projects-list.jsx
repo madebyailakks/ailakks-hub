@@ -2,7 +2,7 @@ import style from "./projects-list.module.css";
 
 const projectsList = [
     {
-        "displayName": "Regorland",
+        "displayName": "Regorland Network",
         "image": "regorland.png"
     },
     {
@@ -32,6 +32,10 @@ const projectsList = [
     {
         "displayName": "Hybox Studios",
         "image": "hybox.png"
+    },
+    {
+        "displayName": "KirosCraft",
+        "image": "kiroscraft.png"
     },
     {
         "displayName": "Canary Games",

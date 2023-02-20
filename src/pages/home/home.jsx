@@ -22,6 +22,7 @@ export default function Home() {
             <h1>Hola, soy Ailakks</h1>
             <p>Tengo 16 años, soy de España, y continúo aprendo a diario diferentes lenguajes de programación y tecnologías. He trabajado para grandes creadores de contenido y estoy continuamente trabajando en proyectos nuevos.</p>
 
+            <p>{process.env.REACT_APP_VERSION}</p>
             <div className={style.elements_wrapper}>
                 {data.map((value, key) =>
                     <div className={style.element} key={key}>
