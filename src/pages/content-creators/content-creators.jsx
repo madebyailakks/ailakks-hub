@@ -8,8 +8,8 @@ export default function ContentCreators() {
             <Box title="Creadores de contenido" left={
                 <div className={style.text_wrap}>
                     <p>Estos son algunos de los creadores de contenido para los que he tenido la oportunidad de
-                        trabajar, ya sea directamente o en alguno de sus proyectos.</p>
-                    <p>Muchos más creadores han disfrutado indirectamente de mis creaciones en proyectos mayores, como
+                        trabajar, ya sea directamente o en alguno de sus proyectos.<br/><br/>Muchos más creadores han
+                        disfrutado indirectamente de mis creaciones en proyectos mayores, como
                         en los eventos.</p>
                 </div>} right={<ContentCreatorsList/>}/>
         </div>
