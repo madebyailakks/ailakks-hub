@@ -38,6 +38,7 @@ body {
 
   --theme-gradient: linear-gradient(45deg, #8defd5, #68f57f);
   --theme-background-main: black;
+  --theme-color-light: #343434;
   --theme-color-dark: #0e0e0e;
 
   --theme-color-main: #4df3a4;
@@ -130,7 +131,7 @@ i {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--theme-color-dark);
+  background: var(--theme-color-light);
   border-radius: 10px;
 }
 

@@ -1,6 +1,33 @@
 import style from "./comissions.module.css";
 import TextIcon from "../../components/text-icon/text-icon";
 
+const features = [
+    {
+        "title": "Personalización",
+        "description": "Valores y mensajes totalmente ajustable."
+    },
+    {
+        "title": "Revisiones",
+        "description": "Cambios menores sin límite."
+    },
+    {
+        "title": "Plataforma",
+        "description": "Spigot, BungeeCord o Velocity, y sus forks."
+    },
+    {
+        "title": "Servicio",
+        "description": "Resolución de bugs después de la venta."
+    },
+    {
+        "title": "Conexión",
+        "description": "Compatible con MySQL, MongoDB y/o Redis."
+    },
+    {
+        "title": "Versión",
+        "description": "Cualquiera, pero una en específico."
+    }
+]
+
 export default function Comissions() {
     return (
         <div className="container">
@@ -11,30 +38,14 @@ export default function Comissions() {
                         <p>¿Necesitas un plugin de Minecraft a medida para tu servidor? ¡Nosotros nos encargamos!
                             Consulta aquí nuestros precios y ventajas, y contáctanos en caso de duda o propuesta.</p>
                     </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Personalización</h1>
-                        <h2>Valores y mensajes totalmente ajustable.</h2>
-                    </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Revisiones</h1>
-                        <h2>Cambios menores sin límite.</h2>
-                    </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Plataforma</h1>
-                        <h2>Spigot, BungeeCord o Velocity, y sus forks.</h2>
-                    </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Servicio</h1>
-                        <h2>Resolución de bugs después de la venta.</h2>
-                    </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Conexión</h1>
-                        <h2>Compatible con MySQL, MongoDB y/o Redis.</h2>
-                    </div>
-                    <div className={style.box} id={style.element}>
-                        <h1>Versión</h1>
-                        <h2>Cualquiera, pero una en específico.</h2>
-                    </div>
+                    {
+                        features.map((value, key) =>
+                            <div className={style.box}>
+                                <h1>{value.title}</h1>
+                                <p>{value.description}</p>
+                            </div>
+                        )
+                    }
                 </div>
                 <div className={style.grid}>
                     <div className={style.box}>
