@@ -59,7 +59,7 @@ export default function SetupList() {
                             <div className={style.element}>
                                 <div>
                                     <h3>{value.name}</h3>
-                                    <p>{value.description}</p>
+                                    <p>{value.description}.</p>
                                     {value.link ? <div className={style.link_container}>
                                         <i className="fa-thin fa-link"/>
                                         <a href={value.link}>{value.display_link}</a>

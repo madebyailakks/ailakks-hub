@@ -7,10 +7,10 @@ export default function Setup() {
         <div>
             <Box title="Setup" left={
                 <div className={style.text_wrap}>
-                    <p>Estos son algunos de los proyectos personales que he decidido tener con el único objetivo de
-                        entretenerme y aprender, aunque quién sabe en lo que se puedan convertir en un futuro.</p>
+                    <p>Estos son los componentes que utilizo día a día en mi setup para hacer mis cositas. También
+                        incluiré una valoración personal por si en algún momento te interesa alguno de estos.</p>
                 </div>
-            } right={<SetupList />}/>
+            } right={<SetupList/>}/>
         </div>
     )
 }

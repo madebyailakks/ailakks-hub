@@ -78,7 +78,7 @@ export default function ProjectsList() {
                                      src={require('../../../media/images/project/' + value.image)}/>
                                 <div>
                                     <h3>{value.displayName}</h3>
-                                    <p>{value.description}</p>
+                                    <p>{value.description}.</p>
                                 </div>
                             </div>
                         </div>
