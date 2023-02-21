@@ -1,6 +1,5 @@
 .header {
     background: var(--theme-gradient);
-    padding: 60px;
 }
 
 .header > div > h1 {

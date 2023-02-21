@@ -44,6 +44,7 @@ body {
   --theme-color-main: #4df3a4;
   --theme-line-color: rgba(255, 255, 255, 0.10);
 
+  --container-padding: 60px;
   --border-radius: 15px;
   --max-width: 1500px;
 
@@ -72,7 +73,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: var(--max-width);
-  padding: 20px 0;
+  padding: var(--container-padding);
 }
 
 h1 {
