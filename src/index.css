@@ -36,11 +36,11 @@ body {
 
   font-family: 'SF-Pro-Display-Bold', sans-serif;
 
-  --theme-gradient: linear-gradient(45deg, #8bf1e4, #4c98dc);
+  --theme-gradient: linear-gradient(45deg, #8defd5, #68f57f);
   --theme-background-main: black;
   --theme-color-dark: #0e0e0e;
 
-  --theme-color-main: #3797d7;
+  --theme-color-main: #4df3a4;
   --theme-line-color: rgba(255, 255, 255, 0.10);
 
   --border-radius: 15px;
@@ -117,4 +117,24 @@ i {
   grid-auto-flow: column;
   grid-gap: 10px;
   width: min-content;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  margin: 40px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-color-dark);
+  border-radius: 10px;
+}
+
+::selection {
+  background: var(--theme-color-main);
+  -webkit-text-fill-color: var(--theme-color-dark);
 }
