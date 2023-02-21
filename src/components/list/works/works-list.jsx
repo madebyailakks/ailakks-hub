@@ -30,7 +30,9 @@ const worksList = [
         "name": "Wodmy",
         "image": "wodmy.png",
         "description": "Agencia de programación",
-        "github": "https://github.com/wodmy-development"
+        "github": "https://github.com/wodmy-development",
+        "display_link": "wodmy.com",
+        "link": "https://wodmy.com"
     },
     {
         "name": "Lookup",
@@ -58,6 +60,10 @@ export default function WorksList() {
                                 <div>
                                     <h3>{value.name}</h3>
                                     <p>{value.description}</p>
+                                    {value.link ? <div className={style.link_container}>
+                                        <i className="fa-thin fa-link" />
+                                        <a href={value.link}>{value.display_link}</a>
+                                    </div> : null}
                                 </div>
                             </div>
                         </div>

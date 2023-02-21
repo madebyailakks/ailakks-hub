@@ -38,8 +38,9 @@ body {
 
   --theme-gradient: linear-gradient(45deg, #ff7be7, #b065f3);
   --theme-background-main: black;
-  --theme-color-main: #151515;
   --theme-color-dark: #0e0e0e;
+
+  --theme-color-main: #3797d7;
 
   --max-width: 1500px;
 
