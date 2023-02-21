@@ -38,34 +38,37 @@ export default function Comissions() {
                 </div>
                 <div className={style.grid}>
                     <div className={style.box}>
-                        <h1>Plan</h1>
-                        <div className="price">
-                            <h4>Simple</h4>
+                        <h4>Plan</h4>
+                        <div className={style.price}>
+                            <h1>Simple</h1>
                             <h5>19.99€</h5>
                         </div>
+                        <hr/>
                         <p>Con un objetivo sencillo, pocos comandos, mensajes y configuraciones. Ejemplo: Plugin de
                             teletransporte aleatorio.</p>
                     </div>
                     <div className={style.box}>
-                        <h1>Plan</h1>
-                        <div className="price">
-                            <h4>Medio</h4>
+                        <h4>Plan</h4>
+                        <div className={style.price}>
+                            <h1>Medio</h1>
                             <h5>39.99€</h5>
                         </div>
+                        <hr/>
                         <p>Funcionamiento simple, algo más logrado. Requiere algún sistema complejo, como almacenamiento
                             de datos, variables y más. Ejemplo: Plugin de economía.</p>
                     </div>
                     <div className={style.box}>
-                        <h1>Plan</h1>
-                        <div className="price">
-                            <h4>Avanzado</h4>
+                        <h4>Plan</h4>
+                        <div className={style.price}>
+                            <h1>Avanzado</h1>
                             <h5>79.99€</h5>
                         </div>
+                        <hr/>
                         <p>Minijuego complejo, con almacenamiento de datos, sincornización, comandos administrativos y
                             más. Ejemplo: Plugin de Skywars.</p>
                     </div>
                 </div>
-                <div className="spaced">
+                <div className={style.info_wrap}>
                     <TextIcon icon={<i
                         className="fa-regular fa-circle-exclamation"/>} text={
                         <p>Actualmente no acepto comisiones. Si se trata de un proyecto a largo plazo, contáctame con tu
@@ -73,30 +76,30 @@ export default function Comissions() {
                 </div>
                 <div className={style.grid} id={style.footer}>
                     <div className={style.box}>
-                        <div className="rich-elemnt">
-                            <div>
-                                <h3>Contáctame</h3>
-                                <p>Aquí tienes mis métodos de contacto, para aclarar dudas o realizar propuestas
-                                    personalizadas (únicamente si es realmente necesario, si no, aplicarán los planes
-                                    aquí
-                                    mencionados).</p>
-                            </div>
-                            <a href="mailto:hola@ailakks.com">hola@ailakks.com</a>
-                            <a href="https://discord.com/users/725039856933404694">Ailakks#5505</a>
+                        <div>
+                            <h3>Contáctame</h3>
+                            <p>Aquí tienes mis métodos de contacto, para aclarar dudas o realizar propuestas
+                                personalizadas (únicamente si es realmente necesario, si no, aplicarán los planes
+                                aquí
+                                mencionados).</p>
+                        </div>
+                        <hr/>
+                        <div className="inline_grid">
+                            <a className="main_btn" href="mailto:hola@ailakks.com">hola@ailakks.com</a>
+                            <a className="main_btn" href="https://discord.com/users/725039856933404694">Ailakks#5505</a>
                         </div>
                     </div>
                     <div className={style.box}>
-                        <div className="rich-elemnt">
-                            <div>
-                                <h3>Patrocinado</h3>
-                                <p>¿Quieres una página web como esta para tus comisiones? La personalizaré con los
-                                    colores,
-                                    información y módulos deseados.</p>
-                            </div>
-                            <div className="price">
-                                <a href="" className="uppercased">Me interesa</a>
-                                <h5>19.99€</h5>
-                            </div>
+                        <div>
+                            <h3>Patrocinado</h3>
+                            <p>¿Quieres una página web como esta para tus comisiones? La personalizaré con los
+                                colores,
+                                información y módulos deseados.</p>
+                        </div>
+                        <hr/>
+                        <div className={style.price}>
+                            <a href="" className="main_btn">Me interesa</a>
+                            <h5>19.99€</h5>
                         </div>
                     </div>
                 </div>

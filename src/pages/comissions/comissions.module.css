@@ -20,6 +20,10 @@
     font-size: 60px;
 }
 
+.box > h4 {
+    text-transform: uppercase;
+}
+
 #features {
     grid-template-columns: repeat(3, 1fr);
 }
@@ -30,4 +34,26 @@
 
 #footer {
     grid-template-columns: repeat(2, auto);
+}
+
+.price {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    place-items: center;
+    text-align: left;
+}
+
+.box > hr {
+    margin: 15px 0;
+    border: 1px solid var(--theme-line-color);
+}
+
+.info_wrap {
+    margin: 0 30px;
+}
+
+#footer > .box {
+    display: grid;
+    grid-template-rows: 1fr;
 }

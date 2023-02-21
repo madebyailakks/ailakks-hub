@@ -41,6 +41,7 @@ body {
   --theme-color-dark: #0e0e0e;
 
   --theme-color-main: #3797d7;
+  --theme-line-color: rgba(255, 255, 255, 0.10);
 
   --border-radius: 15px;
   --max-width: 1500px;
@@ -79,12 +80,16 @@ h1 {
   font-size: 80px;
 }
 
-h2, h3, h4, p {
+h2, h3, h4, h5, p {
   color: white;
 }
 
 p {
   font-size: 20px;
+}
+
+h5 {
+  font-size: 30px;
 }
 
 a {
@@ -98,4 +103,18 @@ a {
 
 i {
   color: white;
+}
+
+.main_btn {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: white;
+  color: var(--theme-color-dark);
+}
+
+.inline_grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  width: min-content;
 }

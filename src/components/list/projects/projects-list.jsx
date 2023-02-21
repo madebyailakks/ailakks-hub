@@ -73,16 +73,14 @@ export default function ProjectsList() {
                 {projectsList.map((value, key) =>
                     <div className={style.element} key={key}>
                         <div className={style.grid_wrap}>
-                            <Link to={value.source}>
-                                <div className={style.element}>
-                                    <img className={style.avatar}
-                                         src={require('../../../media/images/project/' + value.image)}/>
-                                    <div>
-                                        <h3>{value.displayName}</h3>
-                                        <p>{value.description}</p>
-                                    </div>
+                            <div className={style.element}>
+                                <img className={style.avatar}
+                                     src={require('../../../media/images/project/' + value.image)}/>
+                                <div>
+                                    <h3>{value.displayName}</h3>
+                                    <p>{value.description}</p>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                     </div>
                 )}
