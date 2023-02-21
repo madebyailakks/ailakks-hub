@@ -28,6 +28,24 @@ const features = [
     }
 ]
 
+const plans = [
+    {
+        "title": "Simple",
+        "description": "Con un objetivo sencillo, pocos comandos, mensajes y configuraciones. Ejemplo: Plugin de teletransporte aleatorio.",
+        "price": "19.99$"
+    },
+    {
+        "title": "Medio",
+        "description": "Funcionamiento simple, algo más logrado. Requiere algún sistema complejo, como almacenamiento de datos, variables y más. Ejemplo: Plugin de economía.",
+        "price": "39.99$"
+    },
+    {
+        "title": "Avanzado",
+        "description": "Minijuego complejo, con almacenamiento de datos, sincornización, comandos administrativos y más. Ejemplo: Plugin de Skywars.",
+        "price": "79.99€"
+    }
+]
+
 export default function Comissions() {
     return (
         <div className="container">
@@ -48,36 +66,20 @@ export default function Comissions() {
                     }
                 </div>
                 <div className={style.grid}>
-                    <div className={style.box}>
-                        <h4>Plan</h4>
-                        <div className={style.price}>
-                            <h1>Simple</h1>
-                            <h5>19.99€</h5>
-                        </div>
-                        <hr/>
-                        <p>Con un objetivo sencillo, pocos comandos, mensajes y configuraciones. Ejemplo: Plugin de
-                            teletransporte aleatorio.</p>
-                    </div>
-                    <div className={style.box}>
-                        <h4>Plan</h4>
-                        <div className={style.price}>
-                            <h1>Medio</h1>
-                            <h5>39.99€</h5>
-                        </div>
-                        <hr/>
-                        <p>Funcionamiento simple, algo más logrado. Requiere algún sistema complejo, como almacenamiento
-                            de datos, variables y más. Ejemplo: Plugin de economía.</p>
-                    </div>
-                    <div className={style.box}>
-                        <h4>Plan</h4>
-                        <div className={style.price}>
-                            <h1>Avanzado</h1>
-                            <h5>79.99€</h5>
-                        </div>
-                        <hr/>
-                        <p>Minijuego complejo, con almacenamiento de datos, sincornización, comandos administrativos y
-                            más. Ejemplo: Plugin de Skywars.</p>
-                    </div>
+                    {
+                        plans.map((value, key) =>
+                            <div className={style.box}>
+                                <h4>Plan</h4>
+                                <div className={style.price}>
+                                    <h1>{value.title}</h1>
+                                    <h5>{value.price}</h5>
+                                </div>
+                                <hr/>
+                                <p>Minijuego complejo, con almacenamiento de datos, sincornización, comandos administrativos y
+                                    más. Ejemplo: Plugin de Skywars.</p>
+                            </div>
+                        )
+                    }
                 </div>
                 <div className={style.info_wrap}>
                     <TextIcon icon={<i
