@@ -1,6 +1,6 @@
 {
   "name": "ailakks-hub",
-  "homepage": "https://github.com/Ailakks/ailakks-hub",
+  "homepage": "https://ailakks.github.io/ailakks-hub/",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -24,6 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "npm run git-info && react-scripts start",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
