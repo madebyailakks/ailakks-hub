@@ -8,11 +8,15 @@
     grid-template-columns: auto 1fr;
     grid-gap: 30px;
     align-items: center;
+
+    background: var(--theme-color-dark);
+    padding: 12px;
+    border-radius: 5px;
 }
 
 .avatar {
     border-radius: 50%;
-    height: 100px;
+    height: 80px;
 }
 
 .link_container {

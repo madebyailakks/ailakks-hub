@@ -10,13 +10,13 @@
     align-items: center;
 
     background: var(--theme-color-dark);
-    padding: 10px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 5px;
 }
 
 .avatar {
     border-radius: 50%;
-    height: 100px;
+    height: 80px;
 }
 
 .rich_element {
