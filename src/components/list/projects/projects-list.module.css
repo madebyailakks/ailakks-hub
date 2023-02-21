@@ -11,7 +11,7 @@
 
     background: var(--theme-color-dark);
     padding: 12px;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .avatar {

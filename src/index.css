@@ -42,6 +42,7 @@ body {
 
   --theme-color-main: #3797d7;
 
+  --border-radius: 15px;
   --max-width: 1500px;
 
   background: var(--theme-background-main);

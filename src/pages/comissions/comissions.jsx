@@ -2,36 +2,35 @@ import style from "./comissions.module.css";
 
 export default function Comissions() {
     return (
-        <div className={style.wrapper}>
+        <div className="container">
             <div className={style.grid}>
                 <div className={style.box} id={style.header}>
                     <h1>Plugins de Minecraft personalizados.</h1>
-                    <hr />
                         <p>¿Necesitas un plugin de Minecraft a medida para tu servidor? ¡Nosotros nos encargamos!
                             Consulta aquí nuestros precios y ventajas, y contáctanos en caso de duda o propuesta.</p>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Personalización</h3>
+                    <h1>Personalización</h1>
                     <h2>Valores y mensajes totalmente ajustable.</h2>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Revisiones</h3>
+                    <h1>Revisiones</h1>
                     <h2>Cambios menores sin límite.</h2>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Plataforma</h3>
+                    <h1>Plataforma</h1>
                     <h2>Spigot, BungeeCord o Velocity, y sus forks.</h2>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Servicio</h3>
+                    <h1>Servicio</h1>
                     <h2>Resolución de bugs después de la venta.</h2>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Conexión</h3>
+                    <h1>Conexión</h1>
                     <h2>Compatible con MySQL, MongoDB y/o Redis.</h2>
                 </div>
                 <div className={style.box} id={style.element}>
-                    <h3>Versión</h3>
+                    <h1>Versión</h1>
                     <h2>Cualquiera, pero una en específico.</h2>
                 </div>
             </div>
@@ -46,7 +45,7 @@ export default function Comissions() {
                         <p>Con un objetivo sencillo, pocos comandos, mensajes y configuraciones. Ejemplo: Plugin de
                             teletransporte aleatorio.</p>
                 </div>
-                <div className="box">
+                <div className={style.box}>
                     <h3>Plan</h3>
                     <div className="price">
                         <h4>Medio</h4>
@@ -56,7 +55,7 @@ export default function Comissions() {
                         <p>Funcionamiento simple, algo más logrado. Requiere algún sistema complejo, como almacenamiento
                             de datos, variables y más. Ejemplo: Plugin de economía.</p>
                 </div>
-                <div className="box">
+                <div className={style.box}>
                     <h3>Plan</h3>
                     <div className="price">
                         <h4>Avanzado</h4>
