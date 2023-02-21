@@ -58,7 +58,7 @@ const social = [
 
 export default function Home() {
     return (
-        <div className={style.body}>
+        <div className="container">
             <div className={style.wrapper}>
                 <img className="avatar" src={avatar} />
                 <div className={style.content}>
