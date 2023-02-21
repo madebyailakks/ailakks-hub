@@ -111,7 +111,7 @@ export default function Comissions() {
                         </div>
                         <hr/>
                         <div className={style.price}>
-                            <a href="" className="main_btn">Me interesa</a>
+                            <a href="mailto:hola@ailakks.com" className="main_btn">Me interesa</a>
                             <h5>19.99€</h5>
                         </div>
                     </div>

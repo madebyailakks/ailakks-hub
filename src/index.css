@@ -98,7 +98,7 @@ h5 {
 }
 
 a {
-  color: #37c9ce;
+  color: var(--theme-color-main);
   text-decoration: none;
 }
 
