@@ -1,9 +1,11 @@
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+}
+
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
-
-    overflow: hidden;
 }
 
 .box {
@@ -11,12 +13,21 @@
     background-color: var(--theme-color-dark);
     border-radius: 20px;
     text-align: left;
+    height: 100%;
 }
 
 .box > h1 {
     font-size: 60px;
 }
 
+#features {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 #header {
     grid-column: 1 / 4;
+}
+
+#footer {
+    grid-template-columns: repeat(2, auto);
 }

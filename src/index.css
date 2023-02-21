@@ -51,6 +51,7 @@ body {
 * {
   margin: 0;
   height: min-content;
+  box-sizing: border-box;
 }
 
 .app {
