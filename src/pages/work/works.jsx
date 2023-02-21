@@ -7,10 +7,10 @@ export default function Work() {
         <div>
             <Box title="Proyectos personales" left={
                 <div className={style.text_wrap}>
-                    <p>Estos son algunos de los creadores de contenido para los que he tenido la oportunidad de trabajar, ya sea directamente o en alguno de sus proyectos.</p>
-                    <p>Muchos más creadores han disfrutado indirectamente de mis creaciones en proyectos mayores, como el HormiGeo, puedes ver más en proyectos :)</p>
+                    <p>Estos son algunos de los proyectos personales que he decidido tener con el único objetivo de
+                        entretenerme y aprender, aunque quién sabe en lo que se puedan convertir en un futuro.</p>
                 </div>
-            } right={<WorksList />} />
+            } right={<WorksList/>}/>
         </div>
     )
 }

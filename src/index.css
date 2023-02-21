@@ -29,7 +29,7 @@
 
 body {
   margin: 0;
-  overflow-y: hidden;
+  overflow-y: scroll;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,7 +39,7 @@ body {
   --theme-gradient: linear-gradient(45deg, #ff7be7, #b065f3);
   --theme-background-main: black;
   --theme-color-main: #151515;
-  --theme-color-dark: #fc0000;
+  --theme-color-dark: #0e0e0e;
 
   --max-width: 1500px;
 

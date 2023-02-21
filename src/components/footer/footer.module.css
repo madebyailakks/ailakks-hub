@@ -1,5 +1,5 @@
 .wrapper {
-    background: black;
+    background: var(--theme-color-dark);
     padding: 30px;
 
     display: grid;

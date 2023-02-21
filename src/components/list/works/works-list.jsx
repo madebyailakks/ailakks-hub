@@ -5,43 +5,43 @@ const worksList = [
     {
         "name": "Widdlo",
         "image": "widdlo.png",
-        "description": "",
+        "description": "Plataforma de vídeos y directos open source",
         "github": "https://github.com/Widdlo-Development"
     },
     {
         "name": "Aguacate",
         "image": "aguacate.png",
-        "description": "",
+        "description": "Core general con todo lo que necesita una network de Minecraft",
         "github": "https://github.com/Aguacate-Development"
     },
     {
         "name": "Hylaxe Studios",
         "image": "hylaxe-studios.png",
-        "description": "",
+        "description": "Equipo de creación de eventos de Minecraft y desarrollo web",
         "github": "https://github.com/hylaxe-studios"
     },
     {
         "name": "Waterlands",
         "image": "waterlands.png",
-        "description": "",
+        "description": "Versión de legado de Aguacate",
         "github": "https://github.com/Waterlands"
     },
     {
         "name": "Wodmy",
         "image": "wodmy.png",
-        "description": "",
+        "description": "Agencia de programación",
         "github": "https://github.com/wodmy-development"
     },
     {
         "name": "Lookup",
         "image": "lookup.png",
-        "description": "",
+        "description": "Buscador y red social inteligente",
         "github": "https://github.com/lookup-app"
     },
     {
         "name": "Writty",
         "image": "writty.png",
-        "description": "",
+        "description": "Plataforma de blogs open source",
         "github": "https://github.com/writty-dev"
     }
 ]
@@ -56,6 +56,7 @@ export default function WorksList() {
                             <div className={style.element}>
                                 <img className={style.avatar} src={require('../../../media/images/work/' + value.image)} />
                                 <p>{value.name}</p>
+                                <p>{value.description}</p>
                             </div>
                         </div>
                     </div>
