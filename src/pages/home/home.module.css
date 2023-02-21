@@ -21,7 +21,7 @@
     white-space: nowrap;
     align-items: center;
 
-    background: var(--theme-color-main);
+    background: var(--theme-color-dark);
     padding: 5px 15px;
     border-radius: 25px;
 }

@@ -1,7 +1,7 @@
 .link, .active {
     padding: 10px 20px;
     border-radius: 20px;
-    background: var(--theme-color-main);
+    background: var(--theme-color-dark);
     text-decoration: none;
     color: white;
 }

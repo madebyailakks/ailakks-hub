@@ -85,7 +85,7 @@ export default function ContentCreatorsList() {
                         <Link to={value.source}>
                             <div className={style.element}>
                                 <img className={style.avatar} src={require('../../../media/images/creators/' + value.image)} />
-                                <h3 href={value.source}>{value.displayName}</h3>
+                                <p>{value.displayName}</p>
                             </div>
                         </Link>
                     </div>

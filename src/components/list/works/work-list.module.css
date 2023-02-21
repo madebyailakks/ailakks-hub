@@ -18,14 +18,11 @@
 .link_container {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 8px;
+    grid-gap: 5px;
     align-items: center;
 }
 
-.link_container > i, a {
-    color: var(--theme-color-main);
-}
-
 .link_container > a {
+    color: var(--theme-color-main);
     font-size: 20px;
 }
