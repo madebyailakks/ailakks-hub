@@ -6,10 +6,15 @@ import Header from "../../components/header/header";
 
 export default function Playlist() {
     const [playlist, setPlaylist] = useState(null);
+    const [failed, setFailed] = useState(false);
 
     useEffect(() => {
         async function fetchPlaylist() {
-            const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist");
+            const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist").catch(function (error) {
+                if (error) {
+                    setFailed(true);
+                }
+            });
             setPlaylist(response.data);
         }
 
@@ -38,7 +43,7 @@ export default function Playlist() {
                             )
                         }
                     </div> :
-                    <p>No se han podido obtener los datos. Inténtalo de nuevo más tarde.</p>}
+                    <p>{failed ? "No se han podido obtener los datos. Inténtalo de nuevo más tarde.": "Cargando los datos la de lista de reproducción..."}</p>}
             </div>
         </div>
     )
