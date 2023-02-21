@@ -1,6 +1,6 @@
 import style from "./setup.module.css";
 import Box from "../../components/box/box";
-import WorksList from "../../components/list/works/works-list";
+import SetupList from "../../components/list/setup/setup-list";
 
 export default function Setup() {
     return (
@@ -10,7 +10,7 @@ export default function Setup() {
                     <p>Estos son algunos de los proyectos personales que he decidido tener con el único objetivo de
                         entretenerme y aprender, aunque quién sabe en lo que se puedan convertir en un futuro.</p>
                 </div>
-            } right={<WorksList/>}/>
+            } right={<SetupList />}/>
         </div>
     )
 }

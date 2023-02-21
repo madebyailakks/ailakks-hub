@@ -1,0 +1,32 @@
+.wrapper {
+    display: grid;
+    grid-gap: 30px;
+}
+
+.element {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    align-items: center;
+
+    background: var(--theme-color-dark);
+    padding: 12px;
+    border-radius: var(--border-radius);
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 80px;
+}
+
+.link_container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+
+.link_container > a {
+    color: var(--theme-color-main);
+    font-size: 20px;
+}
