@@ -55,8 +55,10 @@ export default function WorksList() {
                         <div className={style.grid_wrap}>
                             <div className={style.element}>
                                 <img className={style.avatar} src={require('../../../media/images/work/' + value.image)} />
-                                <p>{value.name}</p>
-                                <p>{value.description}</p>
+                                <div>
+                                    <h3>{value.name}</h3>
+                                    <p>{value.description}</p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,11 +1,13 @@
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     grid-gap: 30px;
 }
 
 .element {
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+    align-items: center;
 }
 
 .avatar {
