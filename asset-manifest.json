@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ailakks-hub/static/css/main.8d64120a.css",
-    "main.js": "/ailakks-hub/static/js/main.4736412e.js",
+    "main.css": "/ailakks-hub/static/css/main.ad353dad.css",
+    "main.js": "/ailakks-hub/static/js/main.7287a03a.js",
     "static/media/SF-Pro-Display-Bold.otf": "/ailakks-hub/static/media/SF-Pro-Display-Bold.170e68ac3f4c79ef407d.otf",
     "static/media/madkaos.png": "/ailakks-hub/static/media/madkaos.9e184806fb91c84bae98.png",
     "static/media/waterlands.png": "/ailakks-hub/static/media/waterlands.0698508386fb2c867133.png",
@@ -41,11 +41,11 @@
     "static/media/lookup.png": "/ailakks-hub/static/media/lookup.a5637e7b361884a71fb5.png",
     "static/media/kiroscraft.jpg": "/ailakks-hub/static/media/kiroscraft.e4163603999a9876afeb.jpg",
     "index.html": "/ailakks-hub/index.html",
-    "main.8d64120a.css.map": "/ailakks-hub/static/css/main.8d64120a.css.map",
-    "main.4736412e.js.map": "/ailakks-hub/static/js/main.4736412e.js.map"
+    "main.ad353dad.css.map": "/ailakks-hub/static/css/main.ad353dad.css.map",
+    "main.7287a03a.js.map": "/ailakks-hub/static/js/main.7287a03a.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d64120a.css",
-    "static/js/main.4736412e.js"
+    "static/css/main.ad353dad.css",
+    "static/js/main.7287a03a.js"
   ]
 }
