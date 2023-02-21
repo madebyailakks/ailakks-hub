@@ -9,3 +9,7 @@
 
     white-space: nowrap;
 }
+
+.header > h1 {
+    font-size: 40px;
+}

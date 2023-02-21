@@ -4,7 +4,7 @@ import RouteLink from "../button/link/link";
 export default function Navbar() {
     return (
         <div className={style.header}>
-            <a>Ailakks Hub</a>
+            <h1>Ailakks Hub</h1>
             <div className="inline_grid">
                 <RouteLink to="/" text="Inicio" />
                 <RouteLink to="/content-creators" text="Creadores de contenido" />
