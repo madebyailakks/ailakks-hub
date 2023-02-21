@@ -11,6 +11,8 @@ import {CSSTransition, TransitionGroup} from "react-transition-group";
 import style from "./transition.module.css";
 import Navbar from "./components/navbar/navbar";
 import Comissions from "./pages/comissions/comissions";
+import Blog from "./pages/blog/blog";
+import Setup from "./pages/setup/setup";
 
 function App() {
     const location = useLocation();
@@ -35,8 +37,10 @@ function App() {
                             <Route path="/projects" element={<Projects />} />
                             <Route path="/work" element={<Work />} />
                             <Route path="/music" element={<Playlist />} />
-                            <Route path="*" element={<NotFound />} />
                             <Route path="/comissions" element={<Comissions />} />
+                            <Route path="/setup" element={<Setup />} />
+                            <Route path="/blog" element={<Blog />} />
+                            <Route path="*" element={<NotFound />} />
                         </Routes>
                     </CSSTransition>
                 </TransitionGroup>

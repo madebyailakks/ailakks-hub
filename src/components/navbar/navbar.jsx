@@ -12,6 +12,7 @@ export default function Navbar() {
                 <RouteLink to="/work" text="Proyectos personales" />
                 <RouteLink to="/music" text="Música" />
                 <RouteLink to="/comissions" text="Comisiones" />
+                <RouteLink to="/setup" text="Setup" />
                 <RouteLink to="/blog" text="Blog" />
             </div>
         </div>
