@@ -1,6 +1,6 @@
-import style from "./ballons.module.css";
+import style from "./balloons.module.css";
 
-export default function Ballons() {
+export default function Balloons() {
     return (
         <div className={style.wrapper}>
             <div className={style.happy}>

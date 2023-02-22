@@ -1,6 +1,6 @@
 import style from "./home.module.css";
 import {Link} from "react-router-dom";
-import Ballons from "../../components/special/birthday/ballons/ballons";
+import BalloonsOverlay from "../../components/special/birthday/balloons-overlay/balloons-overlay";
 
 const avatar = require("../../media/images/main/avatar.png");
 
@@ -59,9 +59,8 @@ const social = [
 export default function Home() {
     return (
         <div className="container">
+            <BalloonsOverlay />
             <div className={style.container}>
-                <Ballons />
-                <hr />
                 <div className={style.wrapper}>
                     <img className="avatar" src={avatar} />
                     <div className={style.content}>
