@@ -16,3 +16,10 @@
     height: 200px;
     border-radius: var(--border-radius);
 }
+
+.wrapper, #login {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 30px;
+    align-items: center;
+}

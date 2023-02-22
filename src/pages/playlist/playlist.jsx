@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 import axios from 'axios';
 import Header from "../../components/header/header";
-import { getCookie, setCookie } from 'react-use-cookie';
+import {getCookie, setCookie} from 'react-use-cookie';
 
 export default function Playlist() {
     const [playlist, setPlaylist] = useState(null);
@@ -14,17 +14,16 @@ export default function Playlist() {
     useEffect(() => {
         async function fetchPlaylist() {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", { params: { token: getCookie('token') } });
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", {params: {token: getCookie('token')}});
                 setPlaylist(response.data);
             } catch (error) {
-                console.error(error);
+                setCookie('token', null);
             }
         }
 
         async function fetchToken() {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", { params: { code: searchParams.get('code') } });
-                alert(response.data.token);
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", {params: {code: searchParams.get('code')}});
                 setCookie('token', response.data.token);
             } catch (error) {
                 console.error(error);
@@ -41,7 +40,7 @@ export default function Playlist() {
     if (getCookie('token')) {
         return (
             <div>
-                <Header text="Música" />
+                <Header text="Música"/>
                 <div className="container">
                     {playlist ? <div className={style.wrapper}>
                             {
@@ -61,14 +60,28 @@ export default function Playlist() {
                                 )
                             }
                         </div> :
-                        <p>{failed ? "No se han podido obtener los datos. Inténtalo de nuevo más tarde.": "Cargando los datos la de lista de reproducción..."}</p>}
+                        <p>{failed ? "No se han podido obtener los datos. Inténtalo de nuevo más tarde." : "Cargando los datos la de lista de reproducción..."}</p>}
                 </div>
             </div>
         )
     } else {
         return (
             <div>
-                <a href={`https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&scope=playlist-read-private&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URI}`}>a</a>
+                <Header text="Música"/>
+                <div className="container">
+                    <div id={style.login} className={style.wrapper}>
+                        <div>
+                            <h2>Accede con tu cuenta de Spotify</h2>
+                            <p>Completa este sencillo paso con tu cuenta de Spotify para ver la playlist.<br />Lamenablemente, esto es necesario debido a las restricciones de la API oficial.</p>
+                        </div>
+                        <a className="main_btn"
+                           href={`https://accounts.spotify.com/authorize?
+  response_type=code&
+  client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&
+  scope=playlist-read-private&
+  redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URI}`}>Continuar a Spotify</a>
+                    </div>
+                    </div>
             </div>
         )
     }
