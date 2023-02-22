@@ -66,7 +66,7 @@ export default function Home() {
                     <img className="avatar" src={avatar} />
                     <div className={style.content}>
                         <h1 className="gradient">Hola, soy Ailakks.</h1>
-                        <p>Hola, me conocen como Ailakks, tengo 16 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
+                        <p>Hola, me conocen como Ailakks, tengo 17 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
 
                         <div className={style.elements_wrapper}>
                             {data.map((value, key) =>

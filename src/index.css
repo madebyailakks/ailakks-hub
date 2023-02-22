@@ -37,9 +37,9 @@ body {
   font-family: 'SF-Pro-Display-Bold', sans-serif;
 
   --theme-gradient: linear-gradient(45deg, #8defd5, #68f57f);
-  --theme-background-main: black;
+  --theme-background-main: #0c0c0c;
   --theme-color-light: #343434;
-  --theme-color-dark: #0e0e0e;
+  --theme-color-dark: #131313;
 
   --theme-color-main: #4df3a4;
   --theme-line-color: rgba(255, 255, 255, 0.10);
