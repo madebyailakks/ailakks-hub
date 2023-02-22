@@ -3,14 +3,13 @@ import {useEffect, useState} from "react";
 
 import axios from 'axios';
 import Header from "../../components/header/header";
-import {useCookies} from "react-cookie";
+import { getCookie, setCookie } from 'react-use-cookie';
 
 export default function Playlist() {
     const [playlist, setPlaylist] = useState(null);
     const [failed, setFailed] = useState(false);
 
     const searchParams = new URLSearchParams(window.location.search);
-    const [cookies, setCookie, removeCookie] = useCookies(['ailakks-hub']);
 
     useEffect(() => {
         async function fetchPlaylist() {
@@ -25,11 +24,11 @@ export default function Playlist() {
         fetchPlaylist();
 
         if (searchParams.has('code')) {
-            setCookie(searchParams.get('code'));
+            setCookie('code', searchParams.get('code'));
         }
     }, []);
 
-    if (cookies.code) {
+    if (getCookie('code')) {
         return (
             <div>
                 <Header text="Música" />
