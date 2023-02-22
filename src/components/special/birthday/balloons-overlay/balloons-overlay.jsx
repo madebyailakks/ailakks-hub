@@ -51,7 +51,6 @@ export default function BalloonsOverlay() {
     });
 
     return (
-        <div id="balloons_container" className={style.container}>
-        </div>
+        <div id="balloons_container" className={style.container} />
     )
 }
