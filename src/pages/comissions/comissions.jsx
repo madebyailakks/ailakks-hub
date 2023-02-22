@@ -43,7 +43,7 @@ const plans = [
     {
         "title": "Avanzado",
         "description": "Minijuego complejo, con almacenamiento de datos, sincornización, comandos administrativos y más. Ejemplo: Plugin de Skywars.",
-        "price": "79.99€"
+        "price": "79.99$"
     }
 ]
 
@@ -78,9 +78,7 @@ export default function Comissions() {
                                         <h5>{value.price}</h5>
                                     </div>
                                     <hr/>
-                                    <p>Minijuego complejo, con almacenamiento de datos, sincornización, comandos
-                                        administrativos y
-                                        más. Ejemplo: Plugin de Skywars.</p>
+                                    <p>{value.description}</p>
                                 </div>
                             )
                         }
@@ -116,7 +114,7 @@ export default function Comissions() {
                             <hr/>
                             <div className={style.price}>
                                 <a href="mailto:hola@ailakks.com" className="main_btn">Me interesa</a>
-                                <h5>19.99€</h5>
+                                <h5>19.99$</h5>
                             </div>
                         </div>
                     </div>
