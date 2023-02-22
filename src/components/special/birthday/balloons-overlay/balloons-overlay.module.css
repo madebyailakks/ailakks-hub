@@ -17,7 +17,7 @@
 .balloon {
     height: 125px;
     width: 105px;
-    border-radius: 75% 75% 70% 70%;
+    border-radius: 75%;
     position: relative;
 }
 
@@ -26,7 +26,7 @@
     height: 75px;
     width: 1px;
     padding: 1px;
-    background-color: #FDFD96;
+    background-color: #cecece;
     display: block;
     position: absolute;
     top: 125px;
@@ -36,7 +36,6 @@
 }
 
 .balloon:after {
-    content: "▲";
     text-align: center;
     display: block;
     position: absolute;
