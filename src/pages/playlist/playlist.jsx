@@ -13,22 +13,32 @@ export default function Playlist() {
 
     useEffect(() => {
         async function fetchPlaylist() {
-            const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist").catch(function (error) {
-                if (error) {
-                    setFailed(true);
-                }
-            });
-            setPlaylist(response.data);
+            try {
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", { params: { token: getCookie('token') } });
+                setPlaylist(response.data);
+            } catch (error) {
+                console.error(error);
+            }
         }
 
-        fetchPlaylist();
+        async function fetchToken() {
+            try {
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", { params: { code: searchParams.get('code') } });
+                alert(response.data.token);
+                setCookie('token', response.data.token);
+            } catch (error) {
+                console.error(error);
+            }
+        }
 
-        if (searchParams.has('code')) {
-            setCookie('code', searchParams.get('code'));
+        if (getCookie('token')) {
+            fetchPlaylist();
+        } else {
+            fetchToken();
         }
     }, []);
 
-    if (getCookie('code')) {
+    if (getCookie('token')) {
         return (
             <div>
                 <Header text="Música" />
