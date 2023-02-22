@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ailakks-hub/static/css/main.8590de05.css",
-    "main.js": "/ailakks-hub/static/js/main.eace2a59.js",
+    "main.js": "/ailakks-hub/static/js/main.ec74382a.js",
     "static/media/SF-Pro-Display-Bold.otf": "/ailakks-hub/static/media/SF-Pro-Display-Bold.170e68ac3f4c79ef407d.otf",
     "static/media/madkaos.png": "/ailakks-hub/static/media/madkaos.9e184806fb91c84bae98.png",
     "static/media/waterlands.png": "/ailakks-hub/static/media/waterlands.0698508386fb2c867133.png",
@@ -42,10 +42,10 @@
     "static/media/kiroscraft.jpg": "/ailakks-hub/static/media/kiroscraft.e4163603999a9876afeb.jpg",
     "index.html": "/ailakks-hub/index.html",
     "main.8590de05.css.map": "/ailakks-hub/static/css/main.8590de05.css.map",
-    "main.eace2a59.js.map": "/ailakks-hub/static/js/main.eace2a59.js.map"
+    "main.ec74382a.js.map": "/ailakks-hub/static/js/main.ec74382a.js.map"
   },
   "entrypoints": [
     "static/css/main.8590de05.css",
-    "static/js/main.eace2a59.js"
+    "static/js/main.ec74382a.js"
   ]
 }
