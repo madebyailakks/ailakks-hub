@@ -59,6 +59,8 @@ body {
   margin: 0;
   height: min-content;
   box-sizing: border-box;
+
+  -webkit-user-drag: none;
 }
 
 .app {
