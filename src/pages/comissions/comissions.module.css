@@ -46,7 +46,6 @@
 
 .box > hr {
     margin: 15px 0;
-    border: 1px solid var(--theme-line-color);
 }
 
 .info_wrap {

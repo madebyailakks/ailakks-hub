@@ -126,6 +126,10 @@ i {
   width: min-content;
 }
 
+hr {
+  border: 1px solid var(--theme-line-color);
+}
+
 
 
 

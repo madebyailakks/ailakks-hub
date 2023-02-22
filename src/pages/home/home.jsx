@@ -59,34 +59,38 @@ const social = [
 export default function Home() {
     return (
         <div className="container">
-            <div className={style.wrapper}>
-                <img className="avatar" src={avatar} />
-                <div className={style.content}>
-                    <h1 className="gradient">Hola, soy Ailakks.</h1>
-                    <p>Hola, me conocen como Ailakks, tengo 16 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
+            <div className={style.container}>
+                <Ballons />
+                <hr />
+                <div className={style.wrapper}>
+                    <img className="avatar" src={avatar} />
+                    <div className={style.content}>
+                        <h1 className="gradient">Hola, soy Ailakks.</h1>
+                        <p>Hola, me conocen como Ailakks, tengo 16 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
 
-                    <div className={style.elements_wrapper}>
-                        {data.map((value, key) =>
-                            <div className={style.element} key={key}>
-                                <div className={style.element}>
-                                    <i className={value.icon} />
-                                    <p>{value.text}: {value.value}</p>
-                                </div>
-                            </div>
-                        )}
-                    </div>
-                    <h2>Enlaces</h2>
-                    <div className={style.elements_wrapper}>
-                        {social.map((value, key) =>
-                            <div className={style.element} key={key}>
-                                <Link style={{textDecoration: 'none'}} to={value.link}>
+                        <div className={style.elements_wrapper}>
+                            {data.map((value, key) =>
+                                <div className={style.element} key={key}>
                                     <div className={style.element}>
                                         <i className={value.icon} />
-                                        <p>{value.name}</p>
+                                        <p>{value.text}: {value.value}</p>
                                     </div>
-                                </Link>
-                            </div>
-                        )}
+                                </div>
+                            )}
+                        </div>
+                        <h2>Enlaces</h2>
+                        <div className={style.elements_wrapper}>
+                            {social.map((value, key) =>
+                                <div className={style.element} key={key}>
+                                    <Link style={{textDecoration: 'none'}} to={value.link}>
+                                        <div className={style.element}>
+                                            <i className={value.icon} />
+                                            <p>{value.name}</p>
+                                        </div>
+                                    </Link>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
