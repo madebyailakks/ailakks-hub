@@ -74,7 +74,7 @@ export default function Playlist() {
                             <h2>Accede con tu cuenta de Spotify</h2>
                             <p>Completa este sencillo paso con tu cuenta para ver la playlist.</p>
                         </div>
-                        <a className="main_btn" href={`https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&scope=playlist-read-private&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URI}`}>Continuar a Spotify</a>
+                        <a className="main_btn" href={`https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&scope=playlist-read-private&redirect_uri=${encodeURIComponent(process.env.REACT_APP_SPOTIFY_REDIRECT_URI)}`}>Continuar a Spotify</a>
                     </div>
                 </div>
             </div>
