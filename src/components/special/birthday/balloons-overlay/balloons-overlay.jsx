@@ -1,4 +1,5 @@
 import style from "./balloons-overlay.module.css";
+import {useEffect} from "react";
 
 export default function BalloonsOverlay() {
     function random(num) {
@@ -41,9 +42,9 @@ export default function BalloonsOverlay() {
         }, 500)
     }
 
-    window.addEventListener("load", () => {
+    useEffect(() => {
         createBalloons(30)
-    });
+    }, []);
 
     window.addEventListener("click", () => {
         removeBalloons();
