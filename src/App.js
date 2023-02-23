@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from "react-router-dom";
+import {Route, Routes, useLocation} from "react-router-dom";
 import Home from "./pages/home/home";
 import Work from "./pages/work/works";
 import ContentCreators from "./pages/content-creators/content-creators";
@@ -19,12 +19,12 @@ function App() {
 
     return (
         <div className="app">
-            <Navbar />
+            <Navbar/>
             <div className="body">
                 <TransitionGroup>
                     <CSSTransition
                         key={location.key}
-                        timeout={{ enter: 300, exit: 300 }}
+                        timeout={{enter: 300, exit: 300}}
                         classNames={{
                             enter: style["fade-enter"],
                             enterActive: style["fade-enter-active"],
@@ -32,20 +32,20 @@ function App() {
                             exitActive: style["fade-exit-active"],
                         }}>
                         <Routes location={location}>
-                            <Route path="/" element={<Home />} />
-                            <Route path="/content-creators" element={<ContentCreators />} />
-                            <Route path="/projects" element={<Projects />} />
-                            <Route path="/work" element={<Work />} />
-                            <Route path="/music" element={<Playlist />} />
-                            <Route path="/comissions" element={<Comissions />} />
-                            <Route path="/setup" element={<Setup />} />
-                            <Route path="/blog" element={<Blog />} />
-                            <Route path="*" element={<NotFound />} />
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/content-creators" element={<ContentCreators/>}/>
+                            <Route path="/projects" element={<Projects/>}/>
+                            <Route path="/work" element={<Work/>}/>
+                            <Route path="/music" element={<Playlist/>}/>
+                            <Route path="/comissions" element={<Comissions/>}/>
+                            <Route path="/setup" element={<Setup/>}/>
+                            <Route path="/blog" element={<Blog/>}/>
+                            <Route path="*" element={<NotFound/>}/>
                         </Routes>
                     </CSSTransition>
                 </TransitionGroup>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

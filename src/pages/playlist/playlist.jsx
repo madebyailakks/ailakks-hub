@@ -14,7 +14,7 @@ export default function Playlist() {
     useEffect(() => {
         async function fetchPlaylist() {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", {params: {token: getCookie('token')}});
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", { params: { token: getCookie('token') } });
                 setPlaylist(response.data);
             } catch (error) {
                 setCookie('token', null);
@@ -23,7 +23,7 @@ export default function Playlist() {
 
         async function fetchToken() {
             try {
-                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", {params: {code: searchParams.get('code')}});
+                const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", { params: { code: searchParams.get('code') } });
                 setCookie('token', response.data.token);
             } catch (error) {
                 console.error(error);
@@ -72,16 +72,11 @@ export default function Playlist() {
                     <div id={style.login} className={style.wrapper}>
                         <div>
                             <h2>Accede con tu cuenta de Spotify</h2>
-                            <p>Completa este sencillo paso con tu cuenta de Spotify para ver la playlist.<br />Lamenablemente, esto es necesario debido a las restricciones de la API oficial.</p>
+                            <p>Completa este sencillo paso con tu cuenta para ver la playlist.</p>
                         </div>
-                        <a className="main_btn"
-                           href={`https://accounts.spotify.com/authorize?
-  response_type=code&
-  client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&
-  scope=playlist-read-private&
-  redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URI}`}>Continuar a Spotify</a>
+                        <a className="main_btn" href={`https://accounts.spotify.com/authorize?response_type=code&client_id=${process.env.REACT_APP_SPOTIFY_CLIENT_ID}&scope=playlist-read-private&redirect_uri=${process.env.REACT_APP_SPOTIFY_REDIRECT_URI}`}>Continuar a Spotify</a>
                     </div>
-                    </div>
+                </div>
             </div>
         )
     }
