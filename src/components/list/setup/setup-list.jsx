@@ -84,14 +84,14 @@ const setupList = [
 
 export default function SetupList() {
     return (
-        <div classtype={style.wrapper}>
+        <div className={style.wrapper}>
             {setupList.map((value, key) =>
-                <div classtype={style.element} key={key}>
-                    <div classtype={style.grid_wrap}>
-                        <div classtype={style.element}>
+                <div className={style.element} key={key}>
+                    <div className={style.grid_wrap}>
+                        <div className={style.element}>
                             <div>
                                 <h3>{value.type}</h3>
-                                <p>{value.name}.</p>
+                                <p>{value.name}</p>
                             </div>
                         </div>
                     </div>
