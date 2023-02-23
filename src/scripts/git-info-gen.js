@@ -25,7 +25,7 @@ const main = () => {
     const fileContents = JSON.stringify(obj, null, 2);
 
     fs.writeFileSync(filePath, fileContents);
-    console.log(`Wrote git data to ${filePath} :)`);
+    console.log(`Writing git data in ${filePath} :)`);
 };
 
 main();

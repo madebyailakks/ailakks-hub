@@ -4,12 +4,13 @@ import {useEffect, useState} from "react";
 import axios from 'axios';
 import Header from "../../components/header/header";
 import {getCookie, setCookie} from 'react-use-cookie';
+import {useSearchParams} from "react-router-dom";
 
 export default function Playlist() {
     const [playlist, setPlaylist] = useState(null);
     const [failed, setFailed] = useState(false);
 
-    const searchParams = new URLSearchParams(window.location.search);
+    const [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
         async function fetchPlaylist() {
@@ -26,6 +27,7 @@ export default function Playlist() {
                 const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", { params: { code: searchParams.get('code') } });
                 setCookie('token', response.data.token);
                 searchParams.delete('code');
+                setSearchParams(searchParams);
 
                 fetchPlaylist();
             } catch (error) {
