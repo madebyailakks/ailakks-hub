@@ -1,6 +1,6 @@
 import style from "./footer.module.css";
 
-import generatedGitInfo from '../../generatedGitInfo.json';
+import generatedGitInfo from '../../git-info.json';
 
 export default function Footer() {
     return (

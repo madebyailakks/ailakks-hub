@@ -15,7 +15,7 @@
 .env
 
 # local
-/src/generatedGitInfo.json
+/src/git-info.json
 
 # misc
 .DS_Store

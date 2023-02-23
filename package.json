@@ -19,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "git-info": "node src/scripts/gitInfo.js",
+    "git-info": "node src/scripts/git-info-gen.js",
     "start": "export REACT_APP_VERSION=$(git rev-parse HEAD) && react-scripts start",
     "build": "npm run git-info && react-scripts build",
     "test": "react-scripts test",

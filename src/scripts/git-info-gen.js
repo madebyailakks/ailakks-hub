@@ -21,11 +21,11 @@ const main = () => {
         gitCommitHash
     };
 
-    const filePath = path.resolve('src', 'generatedGitInfo.json');
+    const filePath = path.resolve('src', 'git-info.json');
     const fileContents = JSON.stringify(obj, null, 2);
 
     fs.writeFileSync(filePath, fileContents);
-    console.log(`Wrote the following contents to ${filePath}\n${fileContents}`);
+    console.log(`Wrote git data to ${filePath} :)`);
 };
 
 main();
