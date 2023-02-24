@@ -1,8 +1,7 @@
 import style from "./home.module.css";
 import {Link} from "react-router-dom";
 import BalloonsOverlay from "../../components/special/birthday/balloons-overlay/balloons-overlay";
-import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
-import { render } from "https://cdn.skypack.dev/react-dom@17";
+const confetti = require("https://cdn.skypack.dev/canvas-confetti@1");
 import {useCallback} from "react";
 
 const avatar = require("../../media/images/main/avatar.png");
