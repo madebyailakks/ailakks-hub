@@ -23,3 +23,8 @@
     grid-gap: 30px;
     align-items: center;
 }
+
+#wrapper {
+    display: grid;
+    grid-gap: 20px;
+}

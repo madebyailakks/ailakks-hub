@@ -43,7 +43,7 @@ export default function Playlist() {
         }
     }, []);
 
-    if (!getCookie('token')) {
+    if (false) {
         return (
             <div>
                 <Header text="Música"/>
@@ -61,27 +61,30 @@ export default function Playlist() {
     } else {
         return (
             <div>
-                <Header text="Música"/>
-                <div className="container">
-                    {playlist ? <div className={style.wrapper}>
-                            {
-                                playlist.tracks.items.map((value, key) =>
-                                    <div className={style.element} key={key}>
-                                        <img src={value.track.album.images[0].url}/>
-                                        <a href={value.track.external_urls.spotify}>{value.track.name}</a>
-                                        {
-                                            value.track.artists.map((value, key) =>
-                                                <div className={style.element} key={key}>
-                                                    <a href={value.external_urls.spotify}>{value.name}</a>
-                                                </div>
-                                            )
-                                        }
-                                        <audio src={value.track.preview_url} controls={true} autoPlay={false}/>
-                                    </div>
-                                )
-                            }
-                        </div> :
-                        <p>{failed ? "No se han podido obtener los datos. Inténtalo de nuevo más tarde." : "Cargando los datos la de lista de reproducción..."}</p>}
+                <Header text="Playlist"/>
+                <div id={style.wrapper} className="container">
+                    <p>Esta es la playlist que contiene mis canciones favoritas :) Puedes verla directamente en Spotify <a href={process.env.REACT_APP_SPOTIFY_PLAYLIST}>aquí</a>.</p>
+                    <div>
+                        {playlist ? <div className={style.wrapper}>
+                                {
+                                    playlist.tracks.items.map((value, key) =>
+                                        <div className={style.element} key={key}>
+                                            <img src={value.track.album.images[0].url}/>
+                                            <a href={value.track.external_urls.spotify}>{value.track.name}</a>
+                                            {
+                                                value.track.artists.map((value, key) =>
+                                                    <div className={style.element} key={key}>
+                                                        <a href={value.external_urls.spotify}>{value.name}</a>
+                                                    </div>
+                                                )
+                                            }
+                                            <audio src={value.track.preview_url} controls={true} autoPlay={false}/>
+                                        </div>
+                                    )
+                                }
+                            </div> :
+                            <p>{failed ? "No se han podido obtener los datos. Inténtalo de nuevo más tarde." : "Cargando los datos la de lista de reproducción..."}</p>}
+                    </div>
                 </div>
             </div>
         )
