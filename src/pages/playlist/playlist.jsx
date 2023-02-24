@@ -18,7 +18,7 @@ export default function Playlist() {
                 const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/playlist", { params: { token: getCookie('token') } });
                 setPlaylist(response.data);
             } catch (error) {
-                setCookie('token', null);
+                setCookie('token', '', 0);
             }
         }
 
@@ -26,6 +26,7 @@ export default function Playlist() {
             try {
                 const response = await axios.get(process.env.REACT_APP_API_ENDPOINT + "/token", { params: { code: searchParams.get('code') } });
                 setCookie('token', response.data.token);
+
                 searchParams.delete('code');
                 setSearchParams(searchParams);
 
