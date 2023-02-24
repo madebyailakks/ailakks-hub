@@ -10,7 +10,7 @@ export default function Navbar() {
                 <RouteLink to="/content-creators" text="Creadores de contenido" />
                 <RouteLink to="/projects" text="Proyectos" />
                 <RouteLink to="/work" text="Proyectos personales" />
-                <RouteLink to="/music" text="Música" />
+                <RouteLink to="/playlist" text="Playlist" />
                 <RouteLink to="/comissions" text="Comisiones" />
                 <RouteLink to="/setup" text="Setup" />
                 <RouteLink to="/blog" text="Blog" />

@@ -36,7 +36,7 @@ function App() {
                             <Route path="/content-creators" element={<ContentCreators/>}/>
                             <Route path="/projects" element={<Projects/>}/>
                             <Route path="/work" element={<Work/>}/>
-                            <Route path="/music" element={<Playlist/>}/>
+                            <Route path="/playlist" element={<Playlist/>}/>
                             <Route path="/comissions" element={<Comissions/>}/>
                             <Route path="/setup" element={<Setup/>}/>
                             <Route path="/blog" element={<Blog/>}/>
