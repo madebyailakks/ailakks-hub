@@ -43,7 +43,7 @@ export default function Playlist() {
         }
     }, []);
 
-    if (false) {
+    if (!getCookie('token')) {
         return (
             <div>
                 <Header text="Música"/>
