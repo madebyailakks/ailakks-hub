@@ -41,6 +41,12 @@ const worksList = [
         "github": "https://github.com/lookup-app"
     },
     {
+        "name": "Wibblo",
+        "image": "wibblo.png",
+        "description": "Proveedor de servicios en la nube",
+        "github": "https://github.com/wibblo"
+    },
+    {
         "name": "Writty",
         "image": "writty.png",
         "description": "Plataforma de blogs open source",
