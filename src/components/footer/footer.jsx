@@ -10,7 +10,7 @@ export default function Footer() {
                 <p>Esta página web fue hecha con amor por Ailakks. Código fuente disponible <a href="https://github.com/Ailakks/ailakks-hub">aquí</a>.</p>
             </div>
             <div>
-                <h3>ailakks/ailakks-hub</h3>
+                <h3>madebyailakks/ailakks-hub</h3>
                 <p>{generatedGitInfo.gitBranch}@{generatedGitInfo.gitCommitHash}</p>
             </div>
         </div>
