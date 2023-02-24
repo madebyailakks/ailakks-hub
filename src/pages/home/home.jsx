@@ -1,16 +1,22 @@
 import style from "./home.module.css";
 import {Link} from "react-router-dom";
 import BalloonsOverlay from "../../components/special/birthday/balloons-overlay/balloons-overlay";
+import confetti from "https://cdn.skypack.dev/canvas-confetti@1";
+import { render } from "https://cdn.skypack.dev/react-dom@17";
+import {useCallback} from "react";
 
 const avatar = require("../../media/images/main/avatar.png");
 
 const data = [
     {
+        "id": "birthday",
         "icon": "fa-regular fa-balloon",
         "text": "Cumpleaños",
-        "value": "25 de febrero"
+        "value": "25 de febrero",
+        "extra": "(clic aquí)"
     },
     {
+        "id": "location",
         "icon": "fa-solid fa-location-dot",
         "text": "Ubicación",
         "value": "España"
@@ -55,24 +61,32 @@ const social = [
     }
 ]
 
-
 export default function Home() {
+    const spawnConfetti = useCallback(() => {
+        confetti({
+            particleCount: 150,
+            spread: 120
+        });
+    });
+
     return (
         <div className="container">
-            <BalloonsOverlay />
+            <BalloonsOverlay/>
             <div className={style.container}>
                 <div className={style.wrapper}>
-                    <img className="avatar" src={avatar} />
+                    <img className="avatar" src={avatar}/>
                     <div className={style.content}>
                         <h1 className="gradient">Hola, soy Ailakks.</h1>
-                        <p>Hola, me conocen como Ailakks, tengo 17 años, soy de España, y estoy me encanta la programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy constantemente trabajando en proyectos nuevos y emocionantes.</p>
+                        <p>Hola, me conocen como Ailakks, tengo 17 años, soy de España, y estoy me encanta la
+                            programación, IAs y ciencia. He trabajado para grandes creadores de contenido y estoy
+                            constantemente trabajando en proyectos nuevos y emocionantes.</p>
 
                         <div className={style.elements_wrapper}>
                             {data.map((value, key) =>
-                                <div className={style.element} key={key}>
+                                <div id={style[value.id]} onClick={value.id === "birthday" ? spawnConfetti : null} className={style.element} key={key}>
                                     <div className={style.element}>
-                                        <i className={value.icon} />
-                                        <p>{value.text}: {value.value}</p>
+                                        <i className={value.icon}/>
+                                        <p>{value.text}: {value.value} {value.extra}</p>
                                     </div>
                                 </div>
                             )}
@@ -83,7 +97,7 @@ export default function Home() {
                                 <div className={style.element} key={key}>
                                     <Link style={{textDecoration: 'none'}} to={value.link}>
                                         <div className={style.element}>
-                                            <i className={value.icon} />
+                                            <i className={value.icon}/>
                                             <p>{value.name}</p>
                                         </div>
                                     </Link>
