@@ -83,7 +83,7 @@ export default function Home() {
                         <div className={style.elements_wrapper}>
                             {data.map((value, key) =>
                                 <div id={style[value.id]} onClick={value.id === "birthday" ? spawnConfetti : null} className={style.element} key={key}>
-                                    <div className={style.element}>
+                                    <div id="prevent-select" className={style.element}>
                                         <i className={value.icon}/>
                                         <p>{value.text}: {value.value} {value.extra}</p>
                                     </div>
@@ -95,7 +95,7 @@ export default function Home() {
                             {social.map((value, key) =>
                                 <div className={style.element} key={key}>
                                     <Link style={{textDecoration: 'none'}} to={value.link}>
-                                        <div className={style.element}>
+                                        <div id="prevent-select" className={style.element}>
                                             <i className={value.icon}/>
                                             <p>{value.name}</p>
                                         </div>
