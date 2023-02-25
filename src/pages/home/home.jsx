@@ -12,7 +12,7 @@ const data = [
         "icon": "fa-regular fa-balloon",
         "text": "Cumpleaños",
         "value": "25 de febrero",
-        "extra": "(clic aquí)"
+        "extra": ""
     },
     {
         "id": "location",
@@ -70,7 +70,6 @@ export default function Home() {
 
     return (
         <div className="container">
-            <BalloonsOverlay/>
             <div className={style.container}>
                 <div className={style.wrapper}>
                     <img className="avatar" src={avatar}/>
@@ -82,7 +81,7 @@ export default function Home() {
 
                         <div className={style.elements_wrapper}>
                             {data.map((value, key) =>
-                                <div id={style[value.id]} onClick={value.id === "birthday" ? spawnConfetti : null} className={style.element} key={key}>
+                                <div id={style[value.id]} className={style.element} key={key}>
                                     <div id="prevent-select" className={style.element}>
                                         <i className={value.icon}/>
                                         <p>{value.text}: {value.value} {value.extra}</p>
