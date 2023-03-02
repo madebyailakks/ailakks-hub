@@ -1,10 +1,9 @@
 .header {
-    background: var(--theme-gradient);
+    margin: 20px;
+    background: var(--theme-color-light);
+    border-radius: calc(var(--border-radius) - 10px);
 }
 
 .header > div > h1 {
-    font-size: 100px;
-    color: black;
-
-    -webkit-text-fill-color: black;
+    font-size: 80px;
 }

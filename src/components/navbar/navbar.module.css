@@ -5,8 +5,8 @@
     grid-gap: 20px;
     padding: 25px 60px;
 
-    background: rgba(255, 255, 255, 0.01);
     color: white;
+    background: var(--theme-background-main);
 
     white-space: nowrap;
 }

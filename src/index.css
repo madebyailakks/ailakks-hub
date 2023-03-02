@@ -27,10 +27,11 @@
   --balloon-anim-6: balloon6 5s ease infinite;
 }
 
-body {
-  margin: 0;
-  overflow-y: scroll;
+html {
+  background-image: url('media/images/main/wallpaper.gif');
+}
 
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -44,11 +45,9 @@ body {
   --theme-color-main: #4df3a4;
   --theme-line-color: rgba(255, 255, 255, 0.10);
 
-  --container-padding: 60px;
+  --container-padding: 40px;
   --border-radius: 15px;
   --max-width: 1500px;
-
-  background: var(--theme-background-main);
 
   -webkit-animation: gradientBackground 18s ease infinite;
   -moz-animation: gradientBackground 18s ease infinite;
@@ -67,8 +66,18 @@ body {
   height: 100vh;
 
   display: grid;
-
   grid-template-rows: auto 1fr auto;
+  align-items: center;
+}
+
+.body {
+  max-height: 650px;
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: hidden scroll;
+  border-radius: var(--border-radius);
+
+  background: var(--theme-background-main);
 }
 
 .container {
