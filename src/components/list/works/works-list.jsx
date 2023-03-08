@@ -6,7 +6,7 @@ const worksList = [
         "name": "Widdlo",
         "image": "widdlo.png",
         "description": "Plataforma de vídeos y directos open source",
-        "github": "https://github.com/Widdlo-Development"
+        "github": "https://github.com/widdlo-dev"
     },
     {
         "name": "Aguacate",
