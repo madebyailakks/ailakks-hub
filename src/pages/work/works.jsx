@@ -1,6 +1,6 @@
 import style from "./works.module.css";
 import Box from "../../components/box/box";
-import WorksList from "../../components/list/works/works-list";
+import WorksList from "../../components/list/works/work-list";
 
 export default function Work() {
     return (

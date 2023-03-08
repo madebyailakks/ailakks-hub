@@ -1,7 +1,7 @@
 import style from "./work-list.module.css";
 import {Link} from "react-router-dom";
 
-const worksList = [
+const workList = [
     {
         "name": "Widdlo",
         "image": "widdlo.png",
@@ -57,7 +57,7 @@ const worksList = [
 export default function WorksList() {
     return (
         <div className={style.wrapper}>
-            {worksList.map((value, key) =>
+            {workList.map((value, key) =>
                 <Link to={value.github}>
                     <div className={style.element} key={key}>
                         <div className={style.grid_wrap}>
