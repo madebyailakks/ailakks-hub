@@ -34,7 +34,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-gap: 70px;
+    grid-gap: 80px;
     align-items: center;
 }
 

@@ -101,6 +101,7 @@ export default function Home() {
                                 </div>
                             )}
                         </div>
+                        <img src="https://lanyard-profile-readme.vercel.app/api/725039856933404694" />
                     </div>
                 </div>
             </div>
