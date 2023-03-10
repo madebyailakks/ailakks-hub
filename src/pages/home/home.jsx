@@ -39,19 +39,19 @@ const social = [
     },
     {
         name: "Twitch",
-        link: "https://www.twitch.tv/ailakksK",
+        link: "https://www.twitch.tv/ailakks",
         icon: "fa-brands fa-twitch"
     },
     /*{
         name: "SpigotMC",
         link: "https://www.spigotmc.org/members/ailakks.1433377/",
         icon: "fa-solid fa-faucet"
-    },
+    },*/
     {
-        name: "Buy me a coffee",
+        name: "Donaciones",
         link: "https://www.buymeacoffee.com/ailakks",
         icon: "fa-regular fa-cup-togo"
-    },*/
+    },
     {
         name: "Email",
         link: "mailto:hola@ailakks.com",
